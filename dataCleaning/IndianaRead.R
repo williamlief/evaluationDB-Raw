@@ -1,5 +1,3 @@
-# This program is terrible and should be rewritten
-
 # Setup ------------------------------------------------------------------------
 
 library(dplyr)
@@ -9,39 +7,27 @@ library(readr)
 source("setup.r")
 
 path <- setpath("Indiana")
-indiana <- stringr::str_remove(path, "/evaluation")
+indiana <- substring(path, 1, nchar(path) - nchar("evaluation"))
 
 # Read -------------------------------------------------------------------------
 
-# file and sheet names
-y1 <- c(paste(path, "sboe-data-er-data-report-12-13.xlsx", sep = "/"),
-        c("12-13 corp level ER data", "12-13 school level ER data"))
-y2 <- c(paste(path, "sboeresultsdatareport2013-14.xlsx", sep = "/"),
-        c("Corp", "School",  "Retention Rate"))
-y3 <- c(paste(path, "2014-15-evaluation-ratings-er-data-website.xlsx", sep = "/"),
-        c("Corporation", "School",  "Retention (School Level)"))
-y4 <- c(paste(path, "2015-16evaluationratings-er-data.xlsx", sep = "/"),
-        c("Corporation", "School", "Retention"))
+corp.y1 <- read_excel(
+  paste(path, "sboe-data-er-data-report-12-13.xlsx", sep = "/"),
+  sheet= "12-13 corp level ER data",
+  skip=1)
 
-# read in the data - here i read in a bunch of data beyond just the district counts but dont do anything with it
-# year 1
-corp.y1 <- read_excel(y1[1], sheet= y1[2], skip=1)
-schl.y1 <- read_excel(y1[1], sheet= y1[3], skip=1)
+corp.y2 <- read_excel(
+  paste(path, "sboeresultsdatareport2013-14.xlsx", sep = "/"),
+  sheet= "Corp",
+  range=cell_cols("A:I"))
 
-# year 2
-corp.y2 <- read_excel(y2[1], sheet= y2[2], range=cell_cols("A:I"))
-schl.y2 <- read_excel(y2[1], sheet= y2[3])
-retn.y2 <- read_excel(y2[1], sheet= y2[4])
+corp.y3 <- read_excel(
+  paste(path, "2014-15-evaluation-ratings-er-data-website.xlsx", sep = "/"),
+  sheet= "Corporation")
 
-# year 3
-corp.y3 <- read_excel(y3[1], sheet= y3[2])
-schl.y3 <- read_excel(y3[1], sheet= y3[3])
-retn.y3 <- read_excel(y3[1], sheet= y3[4])
-
-# year 4
-corp.y4 <- read_excel(y4[1], sheet= y4[2])
-schl.y4 <- read_excel(y4[1], sheet= y4[3])
-retn.y4 <- read_excel(y4[1], sheet= y4[4])
+corp.y4 <- read_excel(
+  paste(path, "2015-16evaluationratings-er-data.xlsx", sep = "/"),
+  "Corporation")
 
 # most recent district directory
 directory <- read_excel(paste0(indiana,"/2017-2018-school-directory-2017-08-07.xlsx")) %>% 
