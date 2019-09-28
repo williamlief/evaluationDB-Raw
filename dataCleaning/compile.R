@@ -46,6 +46,7 @@ df_nces <- df2 %>%
       state == "MA" ~ substring(localid,1,4),
       state == "FL" ~ stringr::str_pad(localid, 2, side = "left", "0"),
       state == "IN" ~ stringr::str_pad(localid, 4, side = "left", "0"),
+      state == "MI" ~ stringr::str_pad(localid, 5, side = "left", "0"),
       TRUE ~ localid
     )) %>% 
   left_join(nces, by = c("state", "year", "localid"))

@@ -34,6 +34,6 @@ Michigan <- df %>%
     vars(et, e1, e2, e3, e4), 
     list(~toNumber(.))
     ) %>%
-  select("year", "name", "localid", "et", "e4", "e3", "e2", "e1")
+  select("state", "year", "name", "localid", "et", "e4", "e3", "e2", "e1")
 
 write_csv(Michigan, "CleanData/MichiganEval.csv")
