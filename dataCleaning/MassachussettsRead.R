@@ -23,10 +23,10 @@ rename(name = `District Name`,
        localid = `District Code`,
        et = `# of Educators`,
        evaluated = `# Evaluated`,
-       e1 = `% Exemplary`,
-       e2 = `% Proficient`,
-       e3 = `% Needs Improvement`,
-       e4 = `% Unsatisfactory`
+       e4 = `% Exemplary`,
+       e3 = `% Proficient`,
+       e2 = `% Needs Improvement`,
+       e1 = `% Unsatisfactory`
        )
 
 
