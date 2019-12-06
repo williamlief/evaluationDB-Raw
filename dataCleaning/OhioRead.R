@@ -8,7 +8,7 @@ source("setup.r")
 
 path <- setpath("Ohio")
 
-# Read -------------------------------------------------------------------------
+# Read 2013-14 data ------------------------------------------------------------
 
 df <- read_excel(paste(path, 
                        "2014-SY-Ohio-Teacher-and-Principal-Evaluations.xlsx", 
@@ -23,7 +23,7 @@ df <- read_excel(paste(path,
 
 # any category with less than three teachers is suppressed. I am filling in zeros
 
-Ohio <- df %>% 
+Ohio_14 <- df %>% 
   mutate(state="OH",
          name=tolower(name),
          e1=as.numeric(e1),
@@ -47,5 +47,12 @@ Ohio <- df %>%
          year = 2014) %>% 
   mutate_if(is.numeric, as.integer) %>% 
   select(state, year, localid, name, e1, e2, e3, e4, et, e1_impute, e2_impute, e3_impute, e4_impute)
+
+# Read District_teacher_data ---------------------------------------------------
+
+
+
+
+
   
 readr::write_csv(Ohio, "CleanData/OhioEval.csv")
