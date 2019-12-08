@@ -8,7 +8,9 @@ All data for this project is currently kept privately until I ready for a public
 ## States in repository
 Payroll records have been obtained from the following states:
 
+* Connecticut
 * Florida
+* Idaho
 * Indiana
 * Louisiana 
 * Massachussettes 
