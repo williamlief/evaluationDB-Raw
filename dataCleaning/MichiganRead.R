@@ -12,16 +12,14 @@ MIpath <- setpath("Michigan")
 df <- 
   read.csv(paste0(MIpath, "/EducatorEffectivenessTrend 2.csv"),
                header = TRUE, skip = 2, nrows = 6204) %>%
-  rename(year = `School Year`,
-         name = `Location Name`,
-         localid = `Location Code`,
-         et = `Total Count `,
-         e4 = `HighlyEffective Count`,
-         e3 = `Effective Count`,
-         e2 = `MinimallyEffective Count`,
-         e1 = `Ineffective Count`)
-
-df <- df[-c(1:7), ]
+  select(year = `School.Year`,
+         name = `Location.Name`,
+         localid = `Location.Code`,
+         et = `Total.Count`,
+         e4 = `HighlyEffective.Count`,
+         e3 = `Effective.Count`,
+         e2 = `MinimallyEffective.Count`,
+         e1 = `Ineffective.Count`)
 
 toNumber = function(e)
 {
@@ -38,6 +36,7 @@ Michigan <- df %>%
     vars(et, e1, e2, e3, e4), 
     list(~toNumber(.))
     ) %>%
+  filter(name != 'statewide') %>% 
   select("state", "year", "name", "localid", "et", "e4", "e3", "e2", "e1")
 
 write_csv(Michigan, "CleanData/MichiganEval.csv")
