@@ -21,7 +21,7 @@ for(i in 1:length(files)) {
 df <- bind_rows(files) %>%
 rename(name = `District Name`,
        localid = `District Code`,
-       et = `# of Educators`,
+       et = `# of Educators to be Evaluated`,
        evaluated = `# Evaluated`,
        e4 = `% Exemplary`,
        e3 = `% Proficient`,
