@@ -27,8 +27,9 @@ df <- bind_rows(files) %>%
 
 Idaho <- df %>% 
   mutate(year = as.numeric(substr(year, 6, 9)),
-         name = tolower(name)
+         name = tolower(name),
+         state = "ID"
         ) %>% 
-  select(year, name, localid, e4, e3, e2, e1)
+  select(state, year, name, localid, e4, e3, e2, e1)
 
 write_csv(Idaho, "CleanData/IdahoEval.csv")
