@@ -124,6 +124,13 @@ directory <- read_excel(paste0(indiana,"/2017-2018-school-directory-2017-08-07.x
 # stack up the data, fill in nces ids
 df <- bind_rows(data) %>% 
   filter(!name %in% c("Grand Total", "(blank)")) %>% 
+  mutate(name = case_when(
+    name == "North Gibson School Corporation" ~ "North Gibson School Corp",
+    name == "Evansville Vanderburgh Sch Corp" ~ "Evansville Vanderburgh School Corp",
+    name == "Garrett-Keyser-Butler Com" ~ "Garrett-Keyser-Butler Com Sch Corp",
+    name == "Lewis Cass Schools" ~ "Southeastern School Corp",
+    TRUE ~ name
+  )) %>% 
   left_join(directory, by = "name") %>% 
   mutate(state="IN",
          district =coalesce(district.x, district.y)) %>% 
