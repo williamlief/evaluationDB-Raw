@@ -1,12 +1,10 @@
-# TODO: Figure out how to parse pdf instead of copy pasting
-# rewrite this code, its terrible
-
 # Setup ------------------------------------------------------------------------
 
 library(dplyr)
 library(readxl)
 library(readr)
 library(pdftools)
+library(stringr)
 
 source("setup.r")
 path <- setpath("Florida")
@@ -20,58 +18,132 @@ path <- setpath("Florida")
 # 1516DistEduEvalRate.xls # 2016
 # 1617DistEduEvalRate.xls # 2017
 
-y1 <- pdf_text(paste(path, "EvaluationRatings.pdf", sep = "/"))
-y2 <- pdf_text(paste(path, "EduEvalRatings.pdf", sep = "/"))
-y3 <- pdf_text(paste(path, "1314EduEvalRatings.pdf", sep = "/"))
-y4 <- pdf_text(paste(path, "1415DistEduEvalRate.pdf", sep = "/"))
-y5 <- read_excel(paste(path, "1516DistEduEvalRate.xls", sep = "/"),
-                 sheet="Clsrm Tchrs - Pct by Dist")
-y6 <- read_excel(paste(path, "1617DistEduEvalRate.xls", sep = "/"),
-                 sheet="Clsrm Tchrs - Pct by Dist")
 
-# here everything is printed in the log, in theory i would figure out how to parse this, but lets be practical im just going to copy pasta to excel and save as csvs
-cat(y1[1]) 
-cat(y1[2])
-cat(y2[2])
-cat(y3[1])
-cat(y4[1])
+## Deal with the pdf files. 
+# 1 parse pdf text
+# 2 clean text
+# 3 read in
 
-# reimport the csvs
-y1 <- read_csv(paste0(path, "/ParsedPDFs/eval2012.csv"))
-y2 <- read_csv(paste0(path, "/ParsedPDFs/eval2013.csv"))
-y3 <- read_csv(paste0(path, "/ParsedPDFs/eval2014.csv"))
-y4 <- read_csv(paste0(path, "/ParsedPDFs/eval2015.csv"))
+# 1 parse pdf
+text <- list() # text stores all the pdf data
+text[[1]] <- pdf_text(paste(path, "EvaluationRatings.pdf", sep = "/"))
+text[[2]] <- pdf_text(paste(path, "EduEvalRatings.pdf", sep = "/"))
+text[[3]] <- pdf_text(paste(path, "1314EduEvalRatings.pdf", sep = "/"))
+text[[4]] <- pdf_text(paste(path, "1415DistEduEvalRate.pdf", sep = "/"))
 
-# clean up the excel files
-names(y5) <- c("DistrictNum","Name","HighlyEffective","pcthe","Effective","pcte","NeedsImprovement","pctni","Developing3yrs","pctd3y","Unsatisfactory","pctu","NotEvaluated","pctne","Total")
-y5 <- y5[-c(1,2),-c(4,6,8,10,12,14)]
+# 2 clean text
+text_read <- list()
+text_read[[1]] <- list()
+text_read[[1]][1] <- text[[1]][1] # first datafile is split on two pages
+text_read[[1]][2] <- text[[1]][2]
+text_read[[2]] <- text[[2]][2] # second is one page, but the second page
+text_read[[3]] <- text[[3]][1] # third is one page
+text_read[[4]] <- text[[4]][1] # fourth is one page
 
-names(y6) <- c("DistrictNum","Name","HighlyEffective","pcthe","Effective","pcte","NeedsImprovement","pctni","Developing3yrs","pctd3y","Unsatisfactory","pctu","NotEvaluated","pctne","Total")
-y6 <- y6[-c(1,2),-c(4,6,8,10,12,14)]
+# format cleanup for parsing use '-' as delim because commas in numbers
+text_read[[1]] <- lapply(text_read[[1]], str_replace_all, "([a-zA-Z.])(\\s)([a-zA-Z.])", "\\1_\\3")
+text_read[2:4] <- lapply(text_read[2:4], str_replace_all, "([a-zA-Z.])(\\s)([a-zA-Z.])", "\\1_\\3")
 
-y1$year = 2012
-y2$year = 2013
-y3$year = 2014
-y4$year = 2015
-y5$year = 2016
-y6$year = 2017
 
-fl56 <- bind_rows(y5,y6) %>% 
-  mutate(DistrictNum=as.numeric(DistrictNum),
-         HighlyEffective=as.numeric(HighlyEffective),
-         Effective=as.numeric(Effective),
-         NeedsImprovement=as.numeric(NeedsImprovement),
-         Developing3yrs=as.numeric(Developing3yrs),
-         Unsatisfactory=as.numeric(Unsatisfactory))
+# 3 Read into csv format
+parse <- list()
 
-# needsimprovement and developing are the same, but teachers in their first three years get the developing rating
-fl <- bind_rows(y1,y2,y3,y4,fl56) %>% 
-  filter(Name != "STATEWIDE TOTAL") %>% 
-  mutate(e2=Developing3yrs+NeedsImprovement,
-         state="FL",
-         name = tolower(Name)) %>% 
-  mutate_if(is.numeric, as.integer) %>% 
-  select(state, year, localid=DistrictNum, name, e1=Unsatisfactory, e2, 
-         e3=Effective, e4=HighlyEffective, eu=NotEvaluated, et=Total)
+parse[[1]] <- bind_rows(
+  read.csv(text = text_read[[1]][[1]],  skip = 2, head = FALSE, sep = "", colClasses = "character"),
+  read.csv(text = text_read[[1]][[2]],  skip = 0, head = FALSE, sep = "", colClasses = "character") 
+) %>% 
+  rename(district = V1, 
+         name = V2, 
+         e4 = V3, 
+         e3 = V4, 
+         e2.1 = V5, 
+         e2.2 = V6, 
+         e1 = V7, 
+         eu = V8,
+         et = V9) %>% 
+  filter(district != "STATE") %>% 
+  mutate(year = 2012)
 
-write_csv(fl, "cleanData/FloridaEval.csv")
+
+parse[[2]] <- 
+  read.csv(text = text_read[[2]], skip = 2, head = FALSE, sep = "", colClasses = "character") %>% 
+  select(district = V1, 
+         name = V2, 
+         e4 = V3, 
+         e3 = V4, 
+         e2.1 = V5, 
+         e2.2 = V6, 
+         e1 = V7, 
+         eu = V8,
+         et = V9) %>% 
+  filter(district != "State") %>% 
+  mutate(year = 2013)
+
+
+parse[[3]] <- 
+  read.csv(text = text_read[[3]], skip = 3, head = FALSE, sep = "", colClasses = "character") %>% 
+  select(district = V1, 
+         name = V2, 
+         e4 = V3, 
+         e3 = V4, 
+         e2.1 = V5, 
+         e2.2 = V6, 
+         e1 = V7, 
+         eu = V8,
+         et = V9) %>% 
+  filter(district != "Statewide_Total") %>% 
+  mutate(year = 2014)
+
+
+parse[[4]] <- 
+  read.csv(text = text_read[[4]], skip = 6, head = FALSE, sep = "", colClasses = "character") %>% 
+  select(district = V1, 
+         name = V2, 
+         e4 = V3, 
+         e3 = V5, 
+         e2.1 = V7, 
+         e2.2 = V9, 
+         e1 = V11, 
+         eu = V13,
+         et = V15) %>% 
+  filter(district != "STATEWIDE_TOTAL", 
+         district != "Page") %>% 
+  mutate(year = 2015)
+
+# Process Excel files - finally some consistent formatting
+excel_parse <- function(filename, skip, year) {
+  read_excel(paste(path, filename, sep = "/"),
+             sheet="Clsrm Tchrs - Pct by Dist", skip = skip, 
+             col_types = "text") %>% 
+    select(district = ...1, 
+           name = ...2, 
+           e4 = N...3, 
+           e3 = N...5, 
+           e2.1 = N...7, 
+           e2.2 = N...9, 
+           e1 = N...11, 
+           eu = ...13,
+           et = ...15) %>% 
+    filter(name != "STATEWIDE TOTAL") %>% 
+    mutate(year = !!year)
+}
+
+parse[[5]] <- 
+  excel_parse("1516DistEduEvalRate.xls", 2, 2016)
+  
+parse[[6]] <- 
+  excel_parse("1617DistEduEvalRate.xls", 2, 2017)
+
+parse[[7]] <- 
+  excel_parse("1718DistEduEvalRate.xls", 3, 2018)
+
+
+# Combine and clean up
+df <- bind_rows(parse) %>% 
+  mutate_at(vars(starts_with("e")), function(x) {as.numeric(gsub(",", "", x))}) %>% 
+  mutate(e2 = e2.1+e2.2,   # Florida splits developing category for early career teachers
+         name = tolower(name),
+         state = "FL") %>%
+  select(-e2.1, -e2.2)
+
+write_csv(df, "cleanData/FloridaEval.csv")
