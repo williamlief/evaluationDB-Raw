@@ -150,6 +150,7 @@ df2 <- df %>%
   mutate_at(
     vars(e1, e2, e3, e4, eu, et),
     na_conv
-  )
+  ) %>% 
+  rename(localid = district)
 
 write_csv(df2, "cleanData/IndianaEval.csv")

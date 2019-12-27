@@ -52,7 +52,7 @@ parse[[1]] <- bind_rows(
   read.csv(text = text_read[[1]][[1]],  skip = 2, head = FALSE, sep = "", colClasses = "character"),
   read.csv(text = text_read[[1]][[2]],  skip = 0, head = FALSE, sep = "", colClasses = "character") 
 ) %>% 
-  rename(district = V1, 
+  rename(localid = V1, 
          name = V2, 
          e4 = V3, 
          e3 = V4, 
@@ -61,13 +61,13 @@ parse[[1]] <- bind_rows(
          e1 = V7, 
          eu = V8,
          et = V9) %>% 
-  filter(district != "STATE") %>% 
+  filter(localid != "STATE") %>% 
   mutate(year = 2012)
 
 
 parse[[2]] <- 
   read.csv(text = text_read[[2]], skip = 2, head = FALSE, sep = "", colClasses = "character") %>% 
-  select(district = V1, 
+  select(localid = V1, 
          name = V2, 
          e4 = V3, 
          e3 = V4, 
@@ -76,13 +76,13 @@ parse[[2]] <-
          e1 = V7, 
          eu = V8,
          et = V9) %>% 
-  filter(district != "State") %>% 
+  filter(localid != "State") %>% 
   mutate(year = 2013)
 
 
 parse[[3]] <- 
   read.csv(text = text_read[[3]], skip = 3, head = FALSE, sep = "", colClasses = "character") %>% 
-  select(district = V1, 
+  select(localid = V1, 
          name = V2, 
          e4 = V3, 
          e3 = V4, 
@@ -91,13 +91,13 @@ parse[[3]] <-
          e1 = V7, 
          eu = V8,
          et = V9) %>% 
-  filter(district != "Statewide_Total") %>% 
+  filter(localid != "Statewide_Total") %>% 
   mutate(year = 2014)
 
 
 parse[[4]] <- 
   read.csv(text = text_read[[4]], skip = 6, head = FALSE, sep = "", colClasses = "character") %>% 
-  select(district = V1, 
+  select(localid = V1, 
          name = V2, 
          e4 = V3, 
          e3 = V5, 
@@ -106,8 +106,8 @@ parse[[4]] <-
          e1 = V11, 
          eu = V13,
          et = V15) %>% 
-  filter(district != "STATEWIDE_TOTAL", 
-         district != "Page") %>% 
+  filter(localid != "STATEWIDE_TOTAL", 
+         localid != "Page") %>% 
   mutate(year = 2015)
 
 # Process Excel files - finally some consistent formatting
@@ -115,7 +115,7 @@ excel_parse <- function(filename, skip, year) {
   read_excel(paste(path, filename, sep = "/"),
              sheet="Clsrm Tchrs - Pct by Dist", skip = skip, 
              col_types = "text") %>% 
-    select(district = ...1, 
+    select(localid = ...1, 
            name = ...2, 
            e4 = N...3, 
            e3 = N...5, 
