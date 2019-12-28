@@ -23,26 +23,31 @@ path <- setpath("New Jersey")
 # If only e1 and e2 are missing, I impute the difference between the reported 
 # total and the sum to e2
 
-y1 <- read_excel(paste(path, "NJDOE_STAFF_EVAL_1314.xlsx", sep = "/"), col_types="text")
-y1$year = 2014
-y2 <- read_excel(paste(path, "NJDOE_STAFF_EVAL_1415.xlsx", sep = "/"), col_types="text")
-y2$year = 2015
-y3 <- read_excel(paste(path, "NJDOE_STAFF_EVAL_1516.xlsx", sep = "/"), col_types="text")
-y3$year = 2016
+raw <- list()
+raw[[1]] <- read_excel(paste(path, "NJDOE_STAFF_EVAL_1314.xlsx", sep = "/"), col_types="text") %>% 
+  mutate(year = 2014)
 
-nj <- bind_rows(y1,y2,y3) %>% 
+raw[[2]] <- read_excel(paste(path, "NJDOE_STAFF_EVAL_1415.xlsx", sep = "/"), col_types="text") %>% 
+  mutate(year = 2015)
+
+raw[[3]] <- read_excel(paste(path, "NJDOE_STAFF_EVAL_1516.xlsx", sep = "/"), col_types="text") %>% 
+  mutate(year = 2016)
+
+whichNA <- function(df, x) {
+  na <- which(is.na(as.numeric(df[[x]])) != is.na(df[[x]]))
+  df[na,] 
+}
+
+nj <- bind_rows(raw) %>% 
   filter(SCHOOL_ID == "999" & CATEGORY == "TEACHERS" & LEA_NAME != "COUNTY TOTAL" & LEA_NAME != "statewide") %>% 
   select(DISTRICT_CODE,COUNTY_CODE,name=LEA_NAME,e1=INEFFECTIVE,e2=PARTIALLY_EFFECTIVE,e3=EFFECTIVE,e4=HIGHLY_EFFECTIVE,et=TOTAL,year) %>% 
   mutate(state = "NJ",
          DISTRICT_CODE = ifelse(nchar(DISTRICT_CODE)==2,paste0(00,DISTRICT_CODE),DISTRICT_CODE),
          DISTRICT_CODE = ifelse(nchar(DISTRICT_CODE)==3,paste0(0,DISTRICT_CODE),DISTRICT_CODE),
          localid = paste0(COUNTY_CODE,DISTRICT_CODE),
-         name=tolower(name),
-         e1=as.numeric(e1),
-         e2=as.numeric(e2),
-         e3=as.numeric(e3),
-         e4=as.numeric(e4),
-         et=as.numeric(et)) %>% 
+         name=tolower(name)) %>% 
+  mutate_at(vars(e1, e2, e3, e4, et), 
+            function(x) as.numeric(gsub("\\*", NA, x))) %>% # * indicates data suppression
   rowwise %>% 
   mutate(sum=sum(e1,e2,e3,e4, na.rm=T),
          nna = is.na(e1)+is.na(e2)+is.na(e3)+is.na(e4),
