@@ -13,8 +13,13 @@ path <- setpath("Massachusetts")
 list <- list.files(path = path, pattern = "*.xlsx", full.names = TRUE)
 files <- lapply(list, read_excel, na = c("NA","NI","NR"), skip = 1) 
 
-years <- c(2014:2017, 2013) # 'files' is in order of file names
-for(i in 1:length(files)) {
+# File name does not include year, but first row of excel file has year as header info
+years <- lapply(list, function(x) {
+  x <- read_excel(x, n_max =1, col_names = FALSE)
+  return(as.numeric(substr(x[1,1], 1, 4)) + 1)}) %>% 
+  unlist()
+
+for (i in 1:length(files)) {
   files[[i]]$year <- years[i]
 }
 
