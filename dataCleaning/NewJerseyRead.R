@@ -33,11 +33,6 @@ raw[[2]] <- read_excel(paste(path, "NJDOE_STAFF_EVAL_1415.xlsx", sep = "/"), col
 raw[[3]] <- read_excel(paste(path, "NJDOE_STAFF_EVAL_1516.xlsx", sep = "/"), col_types="text") %>% 
   mutate(year = 2016)
 
-whichNA <- function(df, x) {
-  na <- which(is.na(as.numeric(df[[x]])) != is.na(df[[x]]))
-  df[na,] 
-}
-
 nj <- bind_rows(raw) %>% 
   filter(SCHOOL_ID == "999" & CATEGORY == "TEACHERS" & LEA_NAME != "COUNTY TOTAL" & LEA_NAME != "statewide") %>% 
   select(DISTRICT_CODE,COUNTY_CODE,name=LEA_NAME,e1=INEFFECTIVE,e2=PARTIALLY_EFFECTIVE,e3=EFFECTIVE,e4=HIGHLY_EFFECTIVE,et=TOTAL,year) %>% 
