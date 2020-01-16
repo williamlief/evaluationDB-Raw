@@ -10,8 +10,8 @@ MIpath <- setpath("Michigan")
 # Read -------------------------------------------------------------------------
 
 df <- 
-  read.csv(paste0(MIpath, "/EducatorEffectivenessTrend 2.csv"),
-               header = TRUE, skip = 2, nrows = 6204) %>%
+  read.csv(paste0(MIpath, "/EducatorEffectivenessTrend.csv"),
+               header = TRUE, skip = 2, nrows = 7093) %>%
   select(year = `School.Year`,
          name = `Location.Name`,
          localid = `Location.Code`,
@@ -20,6 +20,8 @@ df <-
          e3 = `Effective.Count`,
          e2 = `MinimallyEffective.Count`,
          e1 = `Ineffective.Count`)
+
+warning("nrows is hardcoded, when updating data remember to increase this value")
 
 toNumber = function(e)
 {
