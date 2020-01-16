@@ -23,11 +23,15 @@ df <- read_excel(paste0(path, "/ctmirror_copypaste.xlsx"),
 
 # Clean ------------------------------------------------------------------------
 
+localid <- read_csv("dataCleaning/CT_name_localid_xwalk.csv")
+
 CT <- df %>% 
   mutate(name = tolower(name),
          state = "CT",
          year = as.numeric(substr(year, 1, 4)) + 1
   ) %>% 
-  select(state, name, year, e1, e2, e3, e4, es, et)
+  left_join(localid, by = "name") %>% 
+  select(state, name, localid, year, e1, e2, e3, e4, es, et)
+  
 
 write_csv(CT, "cleanData/ConnecticutEval.csv")
