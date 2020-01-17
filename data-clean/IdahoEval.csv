@@ -1,0 +1,843 @@
+state,year,name,localid,e4,e3,e2,e1
+ID,2015,boise independent district,001,0,1668,6,9
+ID,2015,joint school district no. 2,002,443,1385,15,0
+ID,2015,kuna joint district,003,0,304,0,0
+ID,2015,meadows valley district,011,3,12,1,0
+ID,2015,council district,013,5,14,0,0
+ID,2015,marsh valley joint district,021,0,72,0,1
+ID,2015,pocatello district,025,0,675,3,2
+ID,2015,bear lake county district,033,0,64,0,0
+ID,2015,st maries joint district,041,12,50,0,0
+ID,2015,plummer-worley joint district,044,6,22,1,0
+ID,2015,snake river district,052,0,95,1,0
+ID,2015,blackfoot district,055,48,170,3,0
+ID,2015,aberdeen district,058,2,44,0,0
+ID,2015,firth district,059,0,40,2,0
+ID,2015,shelley joint district,060,1,112,0,0
+ID,2015,blaine county district,061,2,297,0,3
+ID,2015,garden valley district,071,7,12,0,0
+ID,2015,basin school district,072,19,5,0,0
+ID,2015,horseshoe bend school district,073,0,20,0,0
+ID,2015,west bonner county district,083,6,73,3,0
+ID,2015,lake pend oreille school district,084,0,239,0,0
+ID,2015,idaho falls district,091,0,546,1,0
+ID,2015,swan valley elementary district,092,NA,NA,NA,NA
+ID,2015,bonneville joint district,093,292,210,19,0
+ID,2015,boundary county district,101,18,65,1,0
+ID,2015,butte county joint district,111,0,30,0,0
+ID,2015,camas county district,121,4,12,0,0
+ID,2015,nampa school district,131,132,670,20,0
+ID,2015,caldwell district,132,6,288,36,0
+ID,2015,wilder district,133,0,43,1,0
+ID,2015,middleton district,134,27,165,4,2
+ID,2015,notus district,135,0,36,2,0
+ID,2015,melba joint district,136,0,47,0,0
+ID,2015,parma district,137,11,56,2,0
+ID,2015,vallivue school district,139,0,404,0,0
+ID,2015,grace joint district,148,3,26,1,0
+ID,2015,north gem district,149,5,14,0,0
+ID,2015,soda springs joint district,150,0,50,1,0
+ID,2015,cassia county joint district,151,0,315,0,0
+ID,2015,clark county district,161,2,13,1,0
+ID,2015,orofino joint district,171,0,76,1,0
+ID,2015,challis joint district,181,0,28,3,0
+ID,2015,mackay joint district,182,0,17,0,0
+ID,2015,prairie elementary district,191,NA,NA,NA,NA
+ID,2015,glenns ferry joint district,192,4,22,0,0
+ID,2015,mountain home district,193,10,178,0,0
+ID,2015,preston joint district,201,2,127,1,0
+ID,2015,west side joint district,202,0,40,1,0
+ID,2015,fremont county joint district,215,0,136,0,0
+ID,2015,emmett independent district,221,11,125,9,1
+ID,2015,gooding joint district,231,24,45,3,0
+ID,2015,wendell district,232,29,31,0,0
+ID,2015,hagerman joint district,233,0,25,0,0
+ID,2015,bliss joint district,234,0,15,0,0
+ID,2015,cottonwood joint district,242,0,32,0,0
+ID,2015,salmon river joint school district,243,3,13,0,0
+ID,2015,mountain view school district,244,16,60,0,0
+ID,2015,jefferson county joint district,251,49,204,6,0
+ID,2015,ririe joint district,252,0,44,0,0
+ID,2015,west jefferson district,253,6,30,1,0
+ID,2015,jerome joint district,261,19,180,5,0
+ID,2015,valley district,262,3,38,0,1
+ID,2015,coeur d'alene district,271,1,566,15,2
+ID,2015,lakeland district,272,0,252,1,0
+ID,2015,post falls district,273,43,247,1,0
+ID,2015,kootenai district,274,0,17,0,0
+ID,2015,moscow district,281,0,163,0,0
+ID,2015,genesee joint district,282,0,24,1,0
+ID,2015,kendrick joint district,283,0,9,0,0
+ID,2015,potlatch district,285,2,9,6,0
+ID,2015,troy school district,287,4,20,0,0
+ID,2015,whitepine joint school district,288,8,11,0,0
+ID,2015,salmon district,291,0,53,0,0
+ID,2015,south lemhi district,292,10,2,0,0
+ID,2015,nezperce joint district,302,7,9,0,0
+ID,2015,kamiah joint district,304,0,36,0,0
+ID,2015,highland joint district,305,5,11,0,0
+ID,2015,shoshone joint district,312,4,26,4,0
+ID,2015,dietrich district,314,0,19,0,0
+ID,2015,richfield district,316,4,13,0,0
+ID,2015,madison district,321,20,235,3,0
+ID,2015,sugar-salem joint district,322,0,85,0,0
+ID,2015,minidoka county joint district,331,47,178,0,0
+ID,2015,lewiston independent district,340,0,311,1,0
+ID,2015,lapwai district,341,3,35,0,0
+ID,2015,culdesac joint district,342,2,13,0,0
+ID,2015,oneida county district,351,0,54,0,0
+ID,2015,marsing joint district,363,10,47,2,0
+ID,2015,pleasant valley elementary district,364,NA,NA,NA,NA
+ID,2015,bruneau-grand view joint school district,365,2,18,3,0
+ID,2015,homedale joint district,370,7,69,2,0
+ID,2015,payette joint district,371,26,53,2,0
+ID,2015,new plymouth district,372,0,58,0,0
+ID,2015,fruitland district,373,0,92,0,0
+ID,2015,american falls joint district,381,20,59,2,0
+ID,2015,rockland district,382,3,15,0,0
+ID,2015,arbon elementary district,383,NA,NA,NA,NA
+ID,2015,kellogg joint district,391,2,73,2,0
+ID,2015,mullan district,392,13,0,0,0
+ID,2015,wallace district,393,1,42,2,0
+ID,2015,avery elementary district,394,NA,NA,NA,NA
+ID,2015,teton county district,401,0,100,0,0
+ID,2015,twin falls district,411,1,486,7,1
+ID,2015,buhl joint district,412,0,71,2,0
+ID,2015,filer district,413,1,87,1,0
+ID,2015,kimberly district,414,25,61,1,1
+ID,2015,hansen district,415,0,25,1,0
+ID,2015,three creek joint elementary district,416,NA,NA,NA,NA
+ID,2015,castleford district,417,0,23,0,0
+ID,2015,murtaugh joint district,418,0,22,0,0
+ID,2015,mccall-donnelly joint school district,421,28,52,0,0
+ID,2015,cascade district,422,15,1,0,0
+ID,2015,weiser district,431,0,90,0,0
+ID,2015,cambridge joint district,432,2,13,1,0
+ID,2015,midvale district,433,5,10,0,0
+ID,2015,"victory charter school, inc.",451,0,24,0,0
+ID,2015,"idaho virtual academy, inc.",452,8,56,2,0
+ID,2015,"idaho virtual high school, inc.",453,0,24,0,0
+ID,2015,"rolling hills public charter school, inc.",454,0,12,0,0
+ID,2015,"compass public charter school, inc.",455,4,28,2,0
+ID,2015,"falcon ridge public charter school, inc.",456,0,15,0,0
+ID,2015,"inspire academics, inc.",457,0,30,1,0
+ID,2015,"liberty charter school, inc.",458,0,23,0,0
+ID,2015,"the academy, inc.",460,0,13,0,0
+ID,2015,"taylor's crossing public charter school, inc.",461,7,9,1,0
+ID,2015,"xavier charter school, inc.",462,15,13,1,0
+ID,2015,"vision charter school, inc.",463,23,3,0,0
+ID,2015,"white pine charter school, inc.",464,0,18,2,0
+ID,2015,"north valley academy, inc.",465,4,14,1,0
+ID,2015,"isucceed virtual high school, inc.",466,0,18,0,0
+ID,2015,"idaho science and technology charter school, inc.",468,2,18,1,0
+ID,2015,"idaho virtual education partners, inc.",469,0,15,0,0
+ID,2015,"the kootenai bridge academy, inc.",470,0,5,0,0
+ID,2015,"palouse prairie educational organization, inc.",472,6,6,0,0
+ID,2015,"the village charter school, inc.",473,0,18,0,0
+ID,2015,"monticello montessori charter school, inc.",474,0,10,0,0
+ID,2015,"the sage international school of boise, a public charter school, inc.",475,13,39,2,0
+ID,2015,"another choice virtual charter school, inc.",476,0,21,0,0
+ID,2015,"blackfoot charter community learning center, inc.",477,0,15,0,0
+ID,2015,"legacy public charter school, inc.",478,0,14,0,0
+ID,2015,"heritage academy, inc.",479,NA,NA,NA,NA
+ID,2015,"north idaho stem charter academy, inc.",480,0,17,1,0
+ID,2015,"heritage community charter school, inc.",481,0,25,0,0
+ID,2015,"american heritage charter school, inc.",482,0,14,0,0
+ID,2015,"chief tahgee elementary academy, inc.",483,0,6,0,0
+ID,2015,"idaho stem academy, inc.",485,0,7,0,0
+ID,2015,"upper carmen public charter school, inc.",486,NA,NA,NA,NA
+ID,2015,"sandpoint charter school, inc.",487,2,25,0,0
+ID,2015,"syringa mountain school, inc.",488,1,5,1,0
+ID,2015,"idaho college and career readiness academy, inc.",489,1,4,0,0
+ID,2015,"idaho distance education academy, inc.",490,2,19,0,0
+ID,2015,"coeur d'alene charter academy, inc.",491,4,30,0,1
+ID,2015,"anser of idaho, inc.",492,7,13,0,0
+ID,2015,"north star charter school, inc.",493,11,37,0,1
+ID,2015,"the pocatello community charter school, inc.",494,2,15,0,0
+ID,2015,canyon-owyhee school service agency (cossa),555,0,15,2,0
+ID,2015,"thomas jefferson charter school, inc.",559,0,22,0,0
+ID,2015,idaho bureau of educational services for the deaf and the blind,596,0,20,0,0
+ID,2015,"s e i tec charter school, inc.",751,1,48,0,0
+ID,2015,"meridian technical charter high school, inc.",768,7,4,0,0
+ID,2015,idaho digital learning academy,771,40,153,3,1
+ID,2015,"meridian medical arts charter high school, inc.",785,3,11,1,0
+ID,2015,"advanced regional technical education, inc.",790,3,30,0,0
+ID,2015,"payette river technical academy, inc.",794,2,8,0,0
+ID,2015,"idaho arts charter school, inc.",795,0,40,0,0
+ID,2015,"moscow charter school, inc.",813,10,0,0,0
+ID,2016,boise independent district,001,0,1695,12,6
+ID,2017,boise independent district,001,0,1712,8,2
+ID,2018,boise independent district,001,0,1736,5,8
+ID,2019,boise independent district,001,0,1757,7,4
+ID,2016,joint school district no. 2,002,815,1286,12,2
+ID,2017,joint school district no. 2,002,872,1258,24,0
+ID,2018,joint school district no. 2,002,0,2177,18,4
+ID,2019,joint school district no. 2,002,0,2216,19,3
+ID,2016,kuna joint district,003,47,259,5,0
+ID,2017,kuna joint district,003,53,255,6,1
+ID,2018,kuna joint district,003,51,257,9,0
+ID,2019,kuna joint district,003,33,280,8,0
+ID,2016,meadows valley district,011,0,14,4,0
+ID,2017,meadows valley district,011,0,17,1,0
+ID,2018,meadows valley district,011,0,17,2,0
+ID,2019,meadows valley district,011,0,17,3,0
+ID,2016,council district,013,0,17,1,0
+ID,2017,council district,013,0,20,0,0
+ID,2018,council district,013,0,19,0,0
+ID,2019,council district,013,6,14,1,0
+ID,2016,marsh valley joint district,021,0,68,0,0
+ID,2017,marsh valley joint district,021,50,24,0,0
+ID,2018,marsh valley joint district,021,50,23,0,0
+ID,2019,marsh valley joint district,021,23,52,1,1
+ID,2016,pocatello district,025,0,668,11,4
+ID,2017,pocatello district,025,0,671,5,1
+ID,2018,pocatello district,025,0,666,6,4
+ID,2019,pocatello district,025,0,660,15,1
+ID,2016,bear lake county district,033,24,36,3,0
+ID,2017,bear lake county district,033,27,41,1,0
+ID,2018,bear lake county district,033,33,37,1,0
+ID,2019,bear lake county district,033,40,31,1,0
+ID,2016,st maries joint district,041,15,52,0,0
+ID,2017,st maries joint district,041,4,56,2,0
+ID,2018,st maries joint district,041,6,55,4,2
+ID,2019,st maries joint district,041,7,53,5,1
+ID,2016,plummer-worley joint district,044,13,24,1,0
+ID,2017,plummer-worley joint district,044,6,30,2,0
+ID,2018,plummer-worley joint district,044,12,25,0,0
+ID,2019,plummer-worley joint district,044,6,30,2,0
+ID,2016,snake river district,052,1,97,2,0
+ID,2017,snake river district,052,1,104,3,0
+ID,2018,snake river district,052,0,109,2,0
+ID,2019,snake river district,052,5,103,0,0
+ID,2016,blackfoot district,055,110,113,0,0
+ID,2017,blackfoot district,055,44,178,3,0
+ID,2018,blackfoot district,055,53,168,3,0
+ID,2019,blackfoot district,055,37,190,2,0
+ID,2016,aberdeen district,058,1,46,1,2
+ID,2017,aberdeen district,058,1,49,0,0
+ID,2018,aberdeen district,058,1,43,4,0
+ID,2019,aberdeen district,058,3,49,0,0
+ID,2016,firth district,059,6,37,0,0
+ID,2017,firth district,059,17,27,0,0
+ID,2018,firth district,059,17,26,0,0
+ID,2019,firth district,059,11,32,0,0
+ID,2016,shelley joint district,060,5,112,0,0
+ID,2017,shelley joint district,060,17,98,4,0
+ID,2018,shelley joint district,060,14,103,3,0
+ID,2019,shelley joint district,060,14,108,2,0
+ID,2016,blaine county district,061,0,293,3,0
+ID,2017,blaine county district,061,0,301,1,0
+ID,2018,blaine county district,061,0,291,1,0
+ID,2019,blaine county district,061,0,304,1,1
+ID,2016,garden valley district,071,0,21,0,0
+ID,2017,garden valley district,071,3,18,0,0
+ID,2018,garden valley district,071,8,12,0,0
+ID,2019,garden valley district,071,6,15,1,0
+ID,2016,basin school district,072,5,19,0,0
+ID,2017,basin school district,072,7,17,0,1
+ID,2018,basin school district,072,8,17,0,0
+ID,2019,basin school district,072,5,21,1,0
+ID,2016,horseshoe bend school district,073,2,18,0,0
+ID,2017,horseshoe bend school district,073,1,17,0,0
+ID,2018,horseshoe bend school district,073,2,16,2,0
+ID,2019,horseshoe bend school district,073,4,15,0,0
+ID,2016,west bonner county district,083,6,73,0,0
+ID,2017,west bonner county district,083,0,82,0,0
+ID,2018,west bonner county district,083,11,66,3,0
+ID,2019,west bonner county district,083,12,59,4,0
+ID,2016,lake pend oreille school district,084,0,231,2,0
+ID,2017,lake pend oreille school district,084,0,236,5,0
+ID,2018,lake pend oreille school district,084,0,231,4,0
+ID,2019,lake pend oreille school district,084,0,233,4,1
+ID,2016,idaho falls district,091,322,230,6,0
+ID,2017,idaho falls district,091,335,227,0,0
+ID,2018,idaho falls district,091,378,196,0,0
+ID,2019,idaho falls district,091,327,242,2,0
+ID,2016,swan valley elementary district,092,NA,NA,NA,NA
+ID,2017,swan valley elementary district,092,NA,NA,NA,NA
+ID,2018,swan valley elementary district,092,NA,NA,NA,NA
+ID,2019,swan valley elementary district,092,NA,NA,NA,NA
+ID,2016,bonneville joint district,093,380,214,11,4
+ID,2017,bonneville joint district,093,429,186,8,4
+ID,2018,bonneville joint district,093,431,207,18,1
+ID,2019,bonneville joint district,093,477,172,9,1
+ID,2016,boundary county district,101,17,69,0,0
+ID,2017,boundary county district,101,29,61,2,0
+ID,2018,boundary county district,101,26,63,1,0
+ID,2019,boundary county district,101,46,47,1,0
+ID,2016,butte county joint district,111,3,24,1,0
+ID,2017,butte county joint district,111,0,28,0,1
+ID,2018,butte county joint district,111,1,30,0,1
+ID,2019,butte county joint district,111,3,29,0,0
+ID,2016,camas county district,121,2,10,1,0
+ID,2017,camas county district,121,6,12,0,0
+ID,2018,camas county district,121,3,13,2,0
+ID,2019,camas county district,121,3,16,0,0
+ID,2016,nampa school district,131,76,745,25,2
+ID,2017,nampa school district,131,134,682,39,1
+ID,2018,nampa school district,131,77,784,19,1
+ID,2019,nampa school district,131,101,741,19,0
+ID,2016,caldwell district,132,0,333,10,3
+ID,2017,caldwell district,132,0,344,6,0
+ID,2018,caldwell district,132,50,282,22,4
+ID,2019,caldwell district,132,92,268,6,0
+ID,2016,wilder district,133,6,23,0,0
+ID,2017,wilder district,133,15,11,0,0
+ID,2018,wilder district,133,14,14,0,0
+ID,2019,wilder district,133,17,9,0,1
+ID,2016,middleton district,134,34,173,3,0
+ID,2017,middleton district,134,61,145,6,0
+ID,2018,middleton district,134,40,166,10,1
+ID,2019,middleton district,134,60,156,2,0
+ID,2016,notus district,135,7,21,0,0
+ID,2017,notus district,135,8,20,0,0
+ID,2018,notus district,135,11,17,1,0
+ID,2019,notus district,135,12,17,0,0
+ID,2016,melba joint district,136,8,33,5,0
+ID,2017,melba joint district,136,26,17,1,0
+ID,2018,melba joint district,136,2,40,4,0
+ID,2019,melba joint district,136,9,38,1,0
+ID,2016,parma district,137,15,34,1,0
+ID,2017,parma district,137,13,39,2,0
+ID,2018,parma district,137,13,55,1,0
+ID,2019,parma district,137,17,48,2,0
+ID,2016,vallivue school district,139,122,288,12,0
+ID,2017,vallivue school district,139,77,375,6,1
+ID,2018,vallivue school district,139,109,351,13,0
+ID,2019,vallivue school district,139,107,380,9,0
+ID,2016,grace joint district,148,7,26,1,0
+ID,2017,grace joint district,148,11,24,1,0
+ID,2018,grace joint district,148,12,22,1,1
+ID,2019,grace joint district,148,14,24,0,0
+ID,2016,north gem district,149,1,17,0,0
+ID,2017,north gem district,149,0,18,0,0
+ID,2018,north gem district,149,3,15,0,0
+ID,2019,north gem district,149,0,17,2,0
+ID,2016,soda springs joint district,150,1,48,1,0
+ID,2017,soda springs joint district,150,11,38,0,0
+ID,2018,soda springs joint district,150,11,40,0,0
+ID,2019,soda springs joint district,150,13,40,0,0
+ID,2016,cassia county joint district,151,0,307,7,1
+ID,2017,cassia county joint district,151,0,307,10,1
+ID,2018,cassia county joint district,151,0,310,11,1
+ID,2019,cassia county joint district,151,0,320,21,1
+ID,2016,clark county district,161,2,14,0,0
+ID,2017,clark county district,161,5,11,0,0
+ID,2018,clark county district,161,6,11,1,0
+ID,2019,clark county district,161,0,14,3,0
+ID,2016,orofino joint district,171,2,69,8,0
+ID,2017,orofino joint district,171,0,74,7,1
+ID,2018,orofino joint district,171,7,65,9,0
+ID,2019,orofino joint district,171,9,71,1,0
+ID,2016,challis joint district,181,12,17,1,0
+ID,2017,challis joint district,181,7,24,1,0
+ID,2018,challis joint district,181,16,11,1,0
+ID,2019,challis joint district,181,11,18,1,0
+ID,2016,mackay joint district,182,4,13,0,0
+ID,2017,mackay joint district,182,0,17,0,0
+ID,2018,mackay joint district,182,2,14,2,0
+ID,2019,mackay joint district,182,8,11,0,0
+ID,2016,prairie elementary district,191,NA,NA,NA,NA
+ID,2017,prairie elementary district,191,NA,NA,NA,NA
+ID,2018,prairie elementary district,191,NA,NA,NA,NA
+ID,2019,prairie elementary district,191,NA,NA,NA,NA
+ID,2016,glenns ferry joint district,192,12,18,0,0
+ID,2017,glenns ferry joint district,192,8,21,1,0
+ID,2018,glenns ferry joint district,192,4,24,2,0
+ID,2019,glenns ferry joint district,192,5,28,0,1
+ID,2016,mountain home district,193,46,152,4,0
+ID,2017,mountain home district,193,26,166,7,0
+ID,2018,mountain home district,193,24,171,3,1
+ID,2019,mountain home district,193,37,159,11,0
+ID,2016,preston joint district,201,19,111,1,0
+ID,2017,preston joint district,201,21,112,1,0
+ID,2018,preston joint district,201,25,107,0,0
+ID,2019,preston joint district,201,16,119,0,0
+ID,2016,west side joint district,202,0,44,0,0
+ID,2017,west side joint district,202,13,31,1,0
+ID,2018,west side joint district,202,3,43,0,0
+ID,2019,west side joint district,202,4,48,1,0
+ID,2016,fremont county joint district,215,0,130,2,0
+ID,2017,fremont county joint district,215,2,130,1,0
+ID,2018,fremont county joint district,215,2,130,2,0
+ID,2019,fremont county joint district,215,0,133,0,0
+ID,2016,emmett independent district,221,25,121,9,0
+ID,2017,emmett independent district,221,24,126,5,0
+ID,2018,emmett independent district,221,20,129,7,2
+ID,2019,emmett independent district,221,16,144,2,0
+ID,2016,gooding joint district,231,24,40,1,0
+ID,2017,gooding joint district,231,14,57,4,0
+ID,2018,gooding joint district,231,12,62,5,0
+ID,2019,gooding joint district,231,16,62,2,0
+ID,2016,wendell district,232,26,42,1,0
+ID,2017,wendell district,232,1,67,0,0
+ID,2018,wendell district,232,9,53,4,0
+ID,2019,wendell district,232,16,54,0,0
+ID,2016,hagerman joint district,233,0,25,0,0
+ID,2017,hagerman joint district,233,0,24,0,0
+ID,2018,hagerman joint district,233,0,23,0,0
+ID,2019,hagerman joint district,233,0,25,1,0
+ID,2016,bliss joint district,234,1,16,0,0
+ID,2017,bliss joint district,234,0,13,0,0
+ID,2018,bliss joint district,234,0,17,0,0
+ID,2019,bliss joint district,234,1,12,0,0
+ID,2016,cottonwood joint district,242,1,29,0,0
+ID,2017,cottonwood joint district,242,1,26,1,0
+ID,2018,cottonwood joint district,242,0,30,2,0
+ID,2019,cottonwood joint district,242,0,31,0,0
+ID,2016,salmon river joint school district,243,0,14,0,0
+ID,2017,salmon river joint school district,243,0,15,0,0
+ID,2018,salmon river joint school district,243,0,15,0,0
+ID,2019,salmon river joint school district,243,0,16,0,0
+ID,2016,mountain view school district,244,8,70,0,0
+ID,2017,mountain view school district,244,58,23,0,0
+ID,2018,mountain view school district,244,45,39,0,0
+ID,2019,mountain view school district,244,16,68,0,0
+ID,2016,jefferson county joint district,251,61,201,14,1
+ID,2017,jefferson county joint district,251,85,190,6,0
+ID,2018,jefferson county joint district,251,69,224,3,0
+ID,2019,jefferson county joint district,251,74,246,4,0
+ID,2016,ririe joint district,252,3,38,3,0
+ID,2017,ririe joint district,252,12,31,2,0
+ID,2018,ririe joint district,252,13,32,1,0
+ID,2019,ririe joint district,252,10,33,0,0
+ID,2016,west jefferson district,253,5,33,1,0
+ID,2017,west jefferson district,253,0,37,4,0
+ID,2018,west jefferson district,253,0,38,3,0
+ID,2019,west jefferson district,253,11,30,0,0
+ID,2016,jerome joint district,261,28,172,11,0
+ID,2017,jerome joint district,261,30,176,7,1
+ID,2018,jerome joint district,261,40,177,7,0
+ID,2019,jerome joint district,261,66,163,1,0
+ID,2016,valley district,262,14,29,0,0
+ID,2017,valley district,262,8,33,2,0
+ID,2018,valley district,262,7,35,1,0
+ID,2019,valley district,262,3,40,1,0
+ID,2016,coeur d'alene district,271,2,591,13,1
+ID,2017,coeur d'alene district,271,0,606,12,2
+ID,2018,coeur d'alene district,271,0,621,6,1
+ID,2019,coeur d'alene district,271,0,628,6,0
+ID,2016,lakeland district,272,0,254,1,0
+ID,2017,lakeland district,272,0,263,6,1
+ID,2018,lakeland district,272,0,278,3,0
+ID,2019,lakeland district,272,0,284,4,0
+ID,2016,post falls district,273,61,247,4,0
+ID,2017,post falls district,273,55,265,2,0
+ID,2018,post falls district,273,58,269,7,1
+ID,2019,post falls district,273,56,275,7,0
+ID,2016,kootenai district,274,0,14,0,0
+ID,2017,kootenai district,274,0,16,0,0
+ID,2018,kootenai district,274,4,12,0,1
+ID,2019,kootenai district,274,5,13,0,0
+ID,2016,moscow district,281,33,126,1,1
+ID,2017,moscow district,281,59,106,0,0
+ID,2018,moscow district,281,44,126,1,0
+ID,2019,moscow district,281,61,109,2,0
+ID,2016,genesee joint district,282,6,19,0,0
+ID,2017,genesee joint district,282,12,12,0,0
+ID,2018,genesee joint district,282,12,14,0,0
+ID,2019,genesee joint district,282,15,11,0,0
+ID,2016,kendrick joint district,283,0,19,1,0
+ID,2017,kendrick joint district,283,10,11,0,0
+ID,2018,kendrick joint district,283,12,9,0,0
+ID,2019,kendrick joint district,283,3,18,0,0
+ID,2016,potlatch district,285,2,27,3,0
+ID,2017,potlatch district,285,14,14,5,1
+ID,2018,potlatch district,285,6,24,4,1
+ID,2019,potlatch district,285,10,19,3,3
+ID,2016,troy school district,287,7,16,0,0
+ID,2017,troy school district,287,8,13,1,0
+ID,2018,troy school district,287,8,12,2,0
+ID,2019,troy school district,287,11,11,0,0
+ID,2016,whitepine joint school district,288,7,12,0,0
+ID,2017,whitepine joint school district,288,6,14,1,0
+ID,2018,whitepine joint school district,288,5,14,0,0
+ID,2019,whitepine joint school district,288,11,8,0,0
+ID,2016,salmon district,291,36,15,0,0
+ID,2017,salmon district,291,31,18,1,0
+ID,2018,salmon district,291,24,26,1,0
+ID,2019,salmon district,291,25,24,1,0
+ID,2016,south lemhi district,292,4,8,0,1
+ID,2017,south lemhi district,292,8,5,0,0
+ID,2018,south lemhi district,292,0,14,0,0
+ID,2019,south lemhi district,292,2,12,0,0
+ID,2016,nezperce joint district,302,5,15,2,0
+ID,2017,nezperce joint district,302,9,11,0,0
+ID,2018,nezperce joint district,302,13,7,0,0
+ID,2019,nezperce joint district,302,1,19,0,0
+ID,2016,kamiah joint district,304,0,32,0,0
+ID,2017,kamiah joint district,304,1,32,0,0
+ID,2018,kamiah joint district,304,0,31,1,0
+ID,2019,kamiah joint district,304,0,32,1,0
+ID,2016,highland joint district,305,0,15,0,0
+ID,2017,highland joint district,305,1,13,2,0
+ID,2018,highland joint district,305,0,14,0,2
+ID,2019,highland joint district,305,0,11,5,0
+ID,2016,shoshone joint district,312,6,27,5,0
+ID,2017,shoshone joint district,312,3,28,6,0
+ID,2018,shoshone joint district,312,15,23,0,1
+ID,2019,shoshone joint district,312,10,27,2,0
+ID,2016,dietrich district,314,6,10,1,0
+ID,2017,dietrich district,314,8,8,2,0
+ID,2018,dietrich district,314,0,16,0,1
+ID,2019,dietrich district,314,2,14,1,0
+ID,2016,richfield district,316,1,13,5,0
+ID,2017,richfield district,316,1,15,4,0
+ID,2018,richfield district,316,0,13,5,0
+ID,2019,richfield district,316,0,18,2,0
+ID,2016,madison district,321,26,241,2,0
+ID,2017,madison district,321,37,223,27,0
+ID,2018,madison district,321,44,249,1,0
+ID,2019,madison district,321,48,229,11,0
+ID,2016,sugar-salem joint district,322,10,76,2,0
+ID,2017,sugar-salem joint district,322,6,80,2,0
+ID,2018,sugar-salem joint district,322,9,83,0,0
+ID,2019,sugar-salem joint district,322,2,90,1,0
+ID,2016,minidoka county joint district,331,51,190,0,0
+ID,2017,minidoka county joint district,331,45,210,1,0
+ID,2018,minidoka county joint district,331,50,206,2,0
+ID,2019,minidoka county joint district,331,33,222,0,0
+ID,2016,lewiston independent district,340,0,299,1,0
+ID,2017,lewiston independent district,340,0,302,4,0
+ID,2018,lewiston independent district,340,0,306,2,0
+ID,2019,lewiston independent district,340,0,310,0,0
+ID,2016,lapwai district,341,7,30,2,0
+ID,2017,lapwai district,341,10,27,3,1
+ID,2018,lapwai district,341,6,29,3,1
+ID,2019,lapwai district,341,10,25,3,0
+ID,2016,culdesac joint district,342,0,14,0,0
+ID,2017,culdesac joint district,342,0,15,1,0
+ID,2018,culdesac joint district,342,0,15,1,0
+ID,2019,culdesac joint district,342,0,15,0,0
+ID,2016,oneida county district,351,3,55,0,0
+ID,2017,oneida county district,351,0,63,1,0
+ID,2018,oneida county district,351,2,74,2,0
+ID,2019,oneida county district,351,1,126,2,0
+ID,2016,marsing joint district,363,4,53,3,0
+ID,2017,marsing joint district,363,17,26,4,0
+ID,2018,marsing joint district,363,10,34,5,0
+ID,2019,marsing joint district,363,9,41,3,0
+ID,2016,pleasant valley elementary district,364,NA,NA,NA,NA
+ID,2017,pleasant valley elementary district,364,NA,NA,NA,NA
+ID,2018,pleasant valley elementary district,364,NA,NA,NA,NA
+ID,2019,pleasant valley elementary district,364,NA,NA,NA,NA
+ID,2016,bruneau-grand view joint school district,365,7,12,4,0
+ID,2017,bruneau-grand view joint school district,365,6,17,1,0
+ID,2018,bruneau-grand view joint school district,365,4,20,0,0
+ID,2019,bruneau-grand view joint school district,365,3,23,0,0
+ID,2016,homedale joint district,370,11,65,1,0
+ID,2017,homedale joint district,370,10,61,5,0
+ID,2018,homedale joint district,370,0,64,1,0
+ID,2019,homedale joint district,370,0,67,1,0
+ID,2016,payette joint district,371,30,52,4,0
+ID,2017,payette joint district,371,29,48,15,0
+ID,2018,payette joint district,371,15,72,6,0
+ID,2019,payette joint district,371,12,74,5,0
+ID,2016,new plymouth district,372,46,6,2,0
+ID,2017,new plymouth district,372,40,12,1,0
+ID,2018,new plymouth district,372,41,13,0,0
+ID,2019,new plymouth district,372,31,22,1,0
+ID,2016,fruitland district,373,10,81,2,0
+ID,2017,fruitland district,373,30,62,0,0
+ID,2018,fruitland district,373,28,63,2,0
+ID,2019,fruitland district,373,31,65,2,0
+ID,2016,american falls joint district,381,12,74,4,0
+ID,2017,american falls joint district,381,15,74,3,0
+ID,2018,american falls joint district,381,9,77,7,2
+ID,2019,american falls joint district,381,35,55,2,0
+ID,2016,rockland district,382,0,17,0,0
+ID,2017,rockland district,382,0,17,0,0
+ID,2018,rockland district,382,0,19,0,0
+ID,2019,rockland district,382,0,15,3,1
+ID,2016,arbon elementary district,383,NA,NA,NA,NA
+ID,2017,arbon elementary district,383,NA,NA,NA,NA
+ID,2018,arbon elementary district,383,NA,NA,NA,NA
+ID,2019,arbon elementary district,383,NA,NA,NA,NA
+ID,2016,kellogg joint district,391,3,63,4,0
+ID,2017,kellogg joint district,391,3,54,11,0
+ID,2018,kellogg joint district,391,7,63,1,0
+ID,2019,kellogg joint district,391,11,59,2,1
+ID,2016,mullan district,392,0,5,0,0
+ID,2017,mullan district,392,0,15,0,0
+ID,2018,mullan district,392,0,15,0,0
+ID,2019,mullan district,392,0,15,0,0
+ID,2016,wallace district,393,4,38,1,0
+ID,2017,wallace district,393,3,37,3,0
+ID,2018,wallace district,393,3,38,2,0
+ID,2019,wallace district,393,1,39,3,0
+ID,2016,avery elementary district,394,NA,NA,NA,NA
+ID,2017,avery elementary district,394,NA,NA,NA,NA
+ID,2018,avery elementary district,394,NA,NA,NA,NA
+ID,2019,avery elementary district,394,NA,NA,NA,NA
+ID,2016,teton county district,401,37,63,6,0
+ID,2017,teton county district,401,17,88,6,1
+ID,2018,teton county district,401,41,69,1,0
+ID,2019,teton county district,401,23,95,1,0
+ID,2016,twin falls district,411,158,343,0,0
+ID,2017,twin falls district,411,160,353,7,0
+ID,2018,twin falls district,411,206,323,8,0
+ID,2019,twin falls district,411,172,367,7,0
+ID,2016,buhl joint district,412,7,66,2,1
+ID,2017,buhl joint district,412,0,70,4,1
+ID,2018,buhl joint district,412,2,72,3,0
+ID,2019,buhl joint district,412,3,74,2,0
+ID,2016,filer district,413,46,47,1,2
+ID,2017,filer district,413,54,45,2,0
+ID,2018,filer district,413,25,73,3,0
+ID,2019,filer district,413,24,76,1,0
+ID,2016,kimberly district,414,24,76,1,0
+ID,2017,kimberly district,414,40,65,2,0
+ID,2018,kimberly district,414,39,73,4,0
+ID,2019,kimberly district,414,45,64,6,1
+ID,2016,hansen district,415,3,20,2,0
+ID,2017,hansen district,415,7,17,2,0
+ID,2018,hansen district,415,6,19,3,0
+ID,2019,hansen district,415,2,24,1,0
+ID,2016,three creek joint elementary district,416,NA,NA,NA,NA
+ID,2017,three creek joint elementary district,416,NA,NA,NA,NA
+ID,2016,castleford district,417,3,18,1,0
+ID,2017,castleford district,417,7,14,1,0
+ID,2018,castleford district,417,0,22,0,0
+ID,2019,castleford district,417,0,22,2,0
+ID,2016,murtaugh joint district,418,13,5,0,0
+ID,2017,murtaugh joint district,418,3,17,0,0
+ID,2018,murtaugh joint district,418,6,17,1,0
+ID,2019,murtaugh joint district,418,5,23,0,0
+ID,2016,mccall-donnelly joint school district,421,41,41,1,0
+ID,2017,mccall-donnelly joint school district,421,33,49,2,1
+ID,2018,mccall-donnelly joint school district,421,50,37,0,0
+ID,2019,mccall-donnelly joint school district,421,60,32,2,0
+ID,2016,cascade district,422,17,6,0,0
+ID,2017,cascade district,422,0,23,1,0
+ID,2018,cascade district,422,2,17,1,0
+ID,2019,cascade district,422,0,6,12,1
+ID,2016,weiser district,431,9,80,1,0
+ID,2017,weiser district,431,7,79,4,1
+ID,2018,weiser district,431,9,82,1,1
+ID,2019,weiser district,431,9,83,3,0
+ID,2016,cambridge joint district,432,0,12,1,0
+ID,2017,cambridge joint district,432,0,15,1,0
+ID,2018,cambridge joint district,432,0,16,1,0
+ID,2019,cambridge joint district,432,2,15,1,0
+ID,2016,midvale district,433,3,13,0,0
+ID,2017,midvale district,433,2,14,1,0
+ID,2018,midvale district,433,1,18,0,0
+ID,2019,midvale district,433,1,15,0,0
+ID,2016,"victory charter school, inc.",451,0,25,0,0
+ID,2017,"victory charter school, inc.",451,0,27,0,0
+ID,2018,"victory charter school, inc.",451,0,26,0,0
+ID,2019,"victory charter school, inc.",451,0,28,0,0
+ID,2016,"idaho virtual academy, inc.",452,5,62,1,0
+ID,2017,"idaho virtual academy, inc.",452,9,60,0,0
+ID,2018,"idaho virtual academy, inc.",452,15,50,1,0
+ID,2019,"idaho virtual academy, inc.",452,18,46,0,1
+ID,2016,"idaho virtual high school, inc.",453,NA,NA,NA,NA
+ID,2017,"idaho virtual high school, inc.",453,0,25,0,0
+ID,2018,"idaho virtual high school, inc.",453,4,22,0,0
+ID,2019,"idaho virtual high school, inc.",453,2,26,0,0
+ID,2016,"rolling hills public charter school, inc.",454,10,4,0,0
+ID,2017,"rolling hills public charter school, inc.",454,7,7,0,0
+ID,2018,"rolling hills public charter school, inc.",454,7,9,0,0
+ID,2019,"rolling hills public charter school, inc.",454,8,9,0,0
+ID,2016,"compass public charter school, inc.",455,9,37,2,0
+ID,2017,"compass public charter school, inc.",455,21,28,2,0
+ID,2018,"compass public charter school, inc.",455,24,27,1,0
+ID,2019,"compass public charter school, inc.",455,29,27,1,0
+ID,2016,"falcon ridge public charter school, inc.",456,0,13,0,0
+ID,2017,"falcon ridge public charter school, inc.",456,0,15,0,0
+ID,2018,"falcon ridge public charter school, inc.",456,0,16,0,0
+ID,2019,"falcon ridge public charter school, inc.",456,9,8,0,0
+ID,2016,"inspire academics, inc.",457,0,32,0,0
+ID,2017,"inspire academics, inc.",457,0,34,0,0
+ID,2018,"inspire academics, inc.",457,1,33,0,1
+ID,2019,"inspire academics, inc.",457,2,32,1,0
+ID,2016,"liberty charter school, inc.",458,0,26,0,0
+ID,2017,"liberty charter school, inc.",458,0,24,0,0
+ID,2018,"liberty charter school, inc.",458,0,25,0,0
+ID,2019,"liberty charter school, inc.",458,0,26,0,0
+ID,2016,"the academy, inc.",460,5,15,3,0
+ID,2017,"the academy, inc.",460,3,18,3,0
+ID,2018,"the academy, inc.",460,0,24,1,0
+ID,2019,"the academy, inc.",460,0,24,2,0
+ID,2016,"taylor's crossing public charter school, inc.",461,10,11,0,0
+ID,2017,"taylor's crossing public charter school, inc.",461,7,14,1,0
+ID,2018,"taylor's crossing public charter school, inc.",461,10,11,0,0
+ID,2019,"taylor's crossing public charter school, inc.",461,10,12,0,0
+ID,2016,"xavier charter school, inc.",462,8,21,2,0
+ID,2017,"xavier charter school, inc.",462,1,30,2,0
+ID,2018,"xavier charter school, inc.",462,2,33,0,0
+ID,2019,"xavier charter school, inc.",462,4,31,0,0
+ID,2016,"vision charter school, inc.",463,25,2,0,0
+ID,2017,"vision charter school, inc.",463,23,6,0,0
+ID,2018,"vision charter school, inc.",463,21,9,0,0
+ID,2019,"vision charter school, inc.",463,21,10,0,0
+ID,2016,"white pine charter school, inc.",464,2,19,0,0
+ID,2017,"white pine charter school, inc.",464,1,23,0,0
+ID,2018,"white pine charter school, inc.",464,1,20,2,0
+ID,2019,"white pine charter school, inc.",464,4,20,1,0
+ID,2016,"north valley academy, inc.",465,5,11,0,0
+ID,2017,"north valley academy, inc.",465,1,15,0,0
+ID,2018,"north valley academy, inc.",465,0,13,1,0
+ID,2019,"north valley academy, inc.",465,0,15,2,0
+ID,2016,"isucceed virtual high school, inc.",466,0,19,0,0
+ID,2017,"isucceed virtual high school, inc.",466,0,18,0,0
+ID,2018,"isucceed virtual high school, inc.",466,9,14,0,0
+ID,2019,"isucceed virtual high school, inc.",466,4,22,0,0
+ID,2016,"idaho science and technology charter school, inc.",468,8,12,2,1
+ID,2017,"idaho science and technology charter school, inc.",468,5,17,1,0
+ID,2018,"idaho science and technology charter school, inc.",468,11,10,1,0
+ID,2019,"idaho science and technology charter school, inc.",468,9,17,0,0
+ID,2016,"idaho virtual education partners, inc.",469,5,12,0,0
+ID,2017,"idaho virtual education partners, inc.",469,0,19,0,0
+ID,2018,"idaho virtual education partners, inc.",469,3,15,3,0
+ID,2019,"idaho virtual education partners, inc.",469,8,14,0,0
+ID,2016,"the kootenai bridge academy, inc.",470,0,5,0,0
+ID,2017,"the kootenai bridge academy, inc.",470,0,6,0,0
+ID,2018,"the kootenai bridge academy, inc.",470,0,6,0,0
+ID,2019,"the kootenai bridge academy, inc.",470,0,6,0,0
+ID,2016,"palouse prairie educational organization, inc.",472,8,4,0,0
+ID,2017,"palouse prairie educational organization, inc.",472,6,6,0,0
+ID,2018,"palouse prairie educational organization, inc.",472,9,3,0,0
+ID,2019,"palouse prairie educational organization, inc.",472,11,2,0,0
+ID,2016,"the village charter school, inc.",473,0,18,0,0
+ID,2017,"the village charter school, inc.",473,1,18,1,0
+ID,2018,"the village charter school, inc.",473,0,20,2,0
+ID,2019,"the village charter school, inc.",473,1,19,4,0
+ID,2016,"monticello montessori charter school, inc.",474,0,9,1,0
+ID,2017,"monticello montessori charter school, inc.",474,5,5,1,0
+ID,2018,"monticello montessori charter school, inc.",474,3,7,0,0
+ID,2019,"monticello montessori charter school, inc.",474,3,7,2,0
+ID,2016,"the sage international school of boise, a public charter school, inc.",475,9,51,0,0
+ID,2017,"the sage international school of boise, a public charter school, inc.",475,17,42,4,0
+ID,2018,"the sage international school of boise, a public charter school, inc.",475,19,49,0,1
+ID,2019,"the sage international school of boise, a public charter school, inc.",475,20,49,1,0
+ID,2016,"another choice virtual charter school, inc.",476,1,28,1,0
+ID,2017,"another choice virtual charter school, inc.",476,11,19,2,0
+ID,2018,"another choice virtual charter school, inc.",476,12,18,2,0
+ID,2019,"another choice virtual charter school, inc.",476,14,13,0,0
+ID,2016,"blackfoot charter community learning center, inc.",477,3,18,2,5
+ID,2017,"blackfoot charter community learning center, inc.",477,3,24,3,0
+ID,2018,"blackfoot charter community learning center, inc.",477,7,21,6,0
+ID,2019,"blackfoot charter community learning center, inc.",477,10,24,2,0
+ID,2016,"legacy public charter school, inc.",478,0,14,0,0
+ID,2017,"legacy public charter school, inc.",478,0,14,0,0
+ID,2018,"legacy public charter school, inc.",478,0,15,0,0
+ID,2019,"legacy public charter school, inc.",478,0,14,0,0
+ID,2016,"heritage academy, inc.",479,4,6,1,2
+ID,2017,"heritage academy, inc.",479,5,4,1,0
+ID,2018,"heritage academy, inc.",479,6,5,1,0
+ID,2019,"heritage academy, inc.",479,4,7,1,0
+ID,2016,"north idaho stem charter academy, inc.",480,0,21,0,1
+ID,2017,"north idaho stem charter academy, inc.",480,0,22,2,0
+ID,2018,"north idaho stem charter academy, inc.",480,0,22,2,1
+ID,2019,"north idaho stem charter academy, inc.",480,0,25,0,0
+ID,2016,"heritage community charter school, inc.",481,0,24,1,0
+ID,2017,"heritage community charter school, inc.",481,0,22,2,0
+ID,2018,"heritage community charter school, inc.",481,1,24,0,0
+ID,2019,"heritage community charter school, inc.",481,2,23,0,0
+ID,2016,"american heritage charter school, inc.",482,4,9,0,0
+ID,2017,"american heritage charter school, inc.",482,4,11,0,0
+ID,2018,"american heritage charter school, inc.",482,4,14,1,0
+ID,2019,"american heritage charter school, inc.",482,5,16,0,0
+ID,2016,"chief tahgee elementary academy, inc.",483,0,2,4,0
+ID,2017,"chief tahgee elementary academy, inc.",483,0,6,1,0
+ID,2018,"chief tahgee elementary academy, inc.",483,0,4,5,0
+ID,2019,"chief tahgee elementary academy, inc.",483,0,9,0,0
+ID,2016,"idaho stem academy, inc.",485,0,6,4,0
+ID,2017,"idaho stem academy, inc.",485,0,8,0,0
+ID,2018,"idaho stem academy, inc.",485,0,9,1,0
+ID,2019,"idaho stem academy, inc.",485,0,15,0,0
+ID,2016,"upper carmen public charter school, inc.",486,10,1,0,0
+ID,2017,"upper carmen public charter school, inc.",486,0,12,0,0
+ID,2018,"upper carmen public charter school, inc.",486,9,4,0,0
+ID,2019,"upper carmen public charter school, inc.",486,3,7,0,0
+ID,2016,"sandpoint charter school, inc.",487,3,17,1,0
+ID,2017,"sandpoint charter school, inc.",487,3,20,2,0
+ID,2018,"sandpoint charter school, inc.",487,4,18,6,0
+ID,2019,"sandpoint charter school, inc.",487,3,22,1,0
+ID,2016,"syringa mountain school, inc.",488,0,9,0,0
+ID,2017,"syringa mountain school, inc.",488,4,4,1,0
+ID,2018,"syringa mountain school, inc.",488,1,8,1,0
+ID,2019,"syringa mountain school, inc.",488,0,8,1,0
+ID,2016,"idaho college and career readiness academy, inc.",489,0,8,0,0
+ID,2017,"idaho college and career readiness academy, inc.",489,0,10,0,0
+ID,2018,"idaho college and career readiness academy, inc.",489,0,10,1,0
+ID,2019,"idaho college and career readiness academy, inc.",489,0,10,1,0
+ID,2016,"idaho distance education academy, inc.",490,1,20,0,0
+ID,2017,"idaho distance education academy, inc.",490,0,20,1,0
+ID,2018,"idaho distance education academy, inc.",490,0,21,2,0
+ID,2019,"idaho distance education academy, inc.",490,1,21,1,0
+ID,2016,"coeur d'alene charter academy, inc.",491,7,25,2,0
+ID,2017,"coeur d'alene charter academy, inc.",491,0,34,1,0
+ID,2018,"coeur d'alene charter academy, inc.",491,6,30,1,0
+ID,2019,"coeur d'alene charter academy, inc.",491,7,26,1,0
+ID,2016,"anser of idaho, inc.",492,12,13,0,0
+ID,2017,"anser of idaho, inc.",492,10,15,0,0
+ID,2018,"anser of idaho, inc.",492,9,16,0,0
+ID,2019,"anser of idaho, inc.",492,10,14,1,0
+ID,2016,"north star charter school, inc.",493,8,43,0,0
+ID,2017,"north star charter school, inc.",493,13,35,3,1
+ID,2018,"north star charter school, inc.",493,12,41,1,0
+ID,2019,"north star charter school, inc.",493,8,43,0,0
+ID,2016,"the pocatello community charter school, inc.",494,7,10,0,0
+ID,2017,"the pocatello community charter school, inc.",494,12,5,0,0
+ID,2018,"the pocatello community charter school, inc.",494,12,5,0,0
+ID,2019,"the pocatello community charter school, inc.",494,11,6,0,0
+ID,2017,"forrester academy, inc.",495,4,7,1,0
+ID,2018,"forrester academy, inc.",495,5,15,1,0
+ID,2019,"forrester academy, inc.",495,8,15,1,0
+ID,2018,"gem prep: pocatello, inc.",496,0,7,0,0
+ID,2019,"gem prep: pocatello, inc.",496,1,6,1,0
+ID,2018,"pathways in education - nampa, inc.",497,0,4,4,0
+ID,2019,"pathways in education - nampa, inc.",497,0,10,1,0
+ID,2019,"gem prep: meridian, inc.",498,1,12,0,0
+ID,2019,"future public school, inc.",499,8,3,0,0
+ID,2019,"peace valley charter school, inc.",511,0,15,0,0
+ID,2019,"project impact stem academy, inc.",513,0,9,2,0
+ID,2019,"advanced regional technical education industrial, inc.",518,NA,NA,NA,NA
+ID,2016,canyon-owyhee school service agency (cossa),555,2,17,0,0
+ID,2017,canyon-owyhee school service agency (cossa),555,1,18,0,0
+ID,2018,canyon-owyhee school service agency (cossa),555,3,17,0,0
+ID,2019,canyon-owyhee school service agency (cossa),555,0,21,0,0
+ID,2016,"thomas jefferson charter school, inc.",559,12,11,0,0
+ID,2017,"thomas jefferson charter school, inc.",559,17,6,0,0
+ID,2018,"thomas jefferson charter school, inc.",559,22,1,0,0
+ID,2019,"thomas jefferson charter school, inc.",559,21,1,0,0
+ID,2018,idaho bureau of educational services for the deaf and the blind,596,5,16,0,0
+ID,2019,idaho bureau of educational services for the deaf and the blind,596,6,15,0,0
+ID,2019,ktec - kootenai tech ed campus,641,0,11,0,0
+ID,2016,"s e i tec charter school, inc.",751,2,42,0,0
+ID,2017,"s e i tec charter school, inc.",751,4,38,1,0
+ID,2018,"s e i tec charter school, inc.",751,0,16,0,0
+ID,2019,"s e i tec charter school, inc.",751,0,15,1,0
+ID,2016,"meridian technical charter high school, inc.",768,12,2,0,0
+ID,2017,"meridian technical charter high school, inc.",768,10,5,0,0
+ID,2018,"meridian technical charter high school, inc.",768,0,14,0,0
+ID,2019,"meridian technical charter high school, inc.",768,0,16,0,0
+ID,2016,idaho digital learning academy,771,88,156,13,1
+ID,2017,idaho digital learning academy,771,107,161,9,1
+ID,2018,idaho digital learning academy,771,48,269,4,0
+ID,2019,idaho digital learning academy,771,94,245,6,0
+ID,2016,"meridian medical arts charter high school, inc.",785,4,9,1,0
+ID,2017,"meridian medical arts charter high school, inc.",785,3,11,0,0
+ID,2018,"meridian medical arts charter high school, inc.",785,1,14,0,0
+ID,2019,"meridian medical arts charter high school, inc.",785,1,14,0,0
+ID,2016,"advanced regional technical education, inc.",790,NA,NA,NA,NA
+ID,2017,"advanced regional technical education, inc.",790,NA,NA,NA,NA
+ID,2018,"advanced regional technical education, inc.",790,NA,NA,NA,NA
+ID,2019,"advanced regional technical education, inc.",790,NA,NA,NA,NA
+ID,2016,"payette river technical academy, inc.",794,0,10,0,0
+ID,2017,"payette river technical academy, inc.",794,0,12,0,0
+ID,2018,"payette river technical academy, inc.",794,0,10,0,0
+ID,2019,"payette river technical academy, inc.",794,0,11,0,0
+ID,2016,"idaho arts charter school, inc.",795,14,23,3,0
+ID,2017,"idaho arts charter school, inc.",795,14,38,0,0
+ID,2018,"idaho arts charter school, inc.",795,11,41,2,0
+ID,2019,"idaho arts charter school, inc.",795,16,44,1,0
+ID,2017,"gem prep: nampa, inc.",796,0,9,1,0
+ID,2018,"gem prep: nampa, inc.",796,0,12,0,0
+ID,2019,"gem prep: nampa, inc.",796,1,15,0,0
+ID,2016,"moscow charter school, inc.",813,6,8,0,0
+ID,2017,"moscow charter school, inc.",813,9,5,0,0
+ID,2018,"moscow charter school, inc.",813,9,6,0,0
+ID,2019,"moscow charter school, inc.",813,8,6,0,0

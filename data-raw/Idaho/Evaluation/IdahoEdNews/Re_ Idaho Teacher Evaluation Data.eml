@@ -1,0 +1,902 @@
+Received: from CY4PR0201MB3409.namprd02.prod.outlook.com
+ (2603:10b6:101:1f::11) by MWHPR0201MB3417.namprd02.prod.outlook.com with
+ HTTPS via CO1PR15CA0043.NAMPRD15.PROD.OUTLOOK.COM; Fri, 27 Sep 2019 21:08:09
+ +0000
+Received: from DM6PR02CA0046.namprd02.prod.outlook.com (2603:10b6:5:177::23)
+ by CY4PR0201MB3409.namprd02.prod.outlook.com (2603:10b6:910:8b::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2284.20; Fri, 27 Sep
+ 2019 21:08:09 +0000
+Received: from SN1NAM02FT062.eop-nam02.prod.protection.outlook.com
+ (2a01:111:f400:7e44::204) by DM6PR02CA0046.outlook.office365.com
+ (2603:10b6:5:177::23) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2220.21 via Frontend
+ Transport; Fri, 27 Sep 2019 21:08:08 +0000
+Authentication-Results: spf=none (sender IP is 148.163.153.235)
+ smtp.mailfrom=idahoednews.org; o365.stanford.edu; dkim=pass (signature was
+ verified) header.d=idahoednews-org.20150623.gappssmtp.com;o365.stanford.edu;
+ dmarc=none action=none header.from=idahoednews.org;compauth=pass reason=106
+Received-SPF: None (protection.outlook.com: idahoednews.org does not designate
+ permitted sender hosts)
+Received: from mx0b-00000d04.pphosted.com (148.163.153.235) by
+ SN1NAM02FT062.mail.protection.outlook.com (10.152.72.208) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2284.25 via Frontend Transport; Fri, 27 Sep 2019 21:08:08 +0000
+Received: from pps.filterd (m0102892.ppops.net [127.0.0.1])
+	by mx0a-00000d04.pphosted.com (8.16.0.42/8.16.0.42) with SMTP id x8RL2rbj021733
+	for <wesben@o365.stanford.edu>; Fri, 27 Sep 2019 14:08:08 -0700
+Authentication-Results-Original: ppops.net;	spf=none
+ smtp.mailfrom=ccorbin@idahoednews.org;	dkim=pass
+ header.d=idahoednews-org.20150623.gappssmtp.com header.s=20150623;	dmarc=none
+Received: from mx0a-00000d03.pphosted.com (mx0a-00000d03.pphosted.com [148.163.149.244])
+	by mx0a-00000d04.pphosted.com with ESMTP id 2v8d3xcjr0-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <wesben@o365.stanford.edu>; Fri, 27 Sep 2019 14:08:07 -0700
+Received: from pps.filterd (m0190089.ppops.net [127.0.0.1])
+	by mx0a-00000d03.pphosted.com (8.16.0.42/8.16.0.42) with SMTP id x8RL5jJR025940
+	for <liefesbenshade@stanford.edu>; Fri, 27 Sep 2019 14:08:06 -0700
+Received: from mail-io1-f44.google.com (mail-io1-f44.google.com [209.85.166.44])
+	by mx0a-00000d03.pphosted.com with ESMTP id 2v6ft6xa7v-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128 verify=NOT)
+	for <liefesbenshade@stanford.edu>; Fri, 27 Sep 2019 14:08:06 -0700
+Received: by mail-io1-f44.google.com with SMTP id c6so19852001ioo.13
+        for <liefesbenshade@stanford.edu>; Fri, 27 Sep 2019 14:08:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=idahoednews-org.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=aFrubNaTAy7dDfm4/fuWKuYBpkRYiDbGHpeT+HMhgD4=;
+        b=0t/s9MD6MHRGhCzDnwJeknEyYw4fyWiic22c2lbJRi/x5zbIEb40mb1kxG1IZCYqAT
+         A1GrkOeht/ysJqGPzK49tA4INQCGz/VFCSSSrZ8PQ0Zq1XMvZs7aqoAJd/phn74HGNRt
+         CSUpi7amrw3bsZ3YK/XnBQe6kSd15Ty6/k74hrF0Vnmci9pvk1WLMbQ5f1WOE5h1EOmv
+         ZW1LpqqgT6JalXDN8m+p0GXPt94vrVdDK3j7NIib+Lr63WyN1MbFXizW0FgDM8Vf/VRG
+         SWQoNAYWcEoEKzlPyhGadne4dBAlFyFEoff6uZqq8hon+syxvDGt6WldLZmvp6TnN7TS
+         NE2A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=aFrubNaTAy7dDfm4/fuWKuYBpkRYiDbGHpeT+HMhgD4=;
+        b=TuGgA286413G/Zn+ViX4V5ceHminWmJGWFZSAh0NzMg+1eNwFRENRLMrmIm1SZy8t6
+         FwknX7AWq6eGRD0qbhhfipOppfBvFKaf1YfWB4AxNVpV8XO22b6/CDMpkOkpp+0qQ+y6
+         0osQVfst78U4iYiu2cJlm5Zt7tzIkwx32Z/kbj/9egkAavi21xYY/Ezu56CBd9JMglGl
+         dyCrNqxZbxQFPpGIv6Am5sE+ulUI6J/u10jFRrFmOu8nwBmS+9vo+87XzDsMw7xrA/g0
+         1W8UbnupC7aq1fuWnfIm0tNXQQFLIqh8rbo9JaZyNS6FIEeCnKzIxTbhXNbrmgJJqbKD
+         dZUA==
+X-Gm-Message-State: APjAAAVPwYyYBkq6zTxtglP+j+RnQCLNd7juYAfOwNMh9hT5tQoPrxfE
+	Vvvm+h8k3i4acBIy7Sy/h5DDHXUulO5/SdkydqkTHT9ZF3Y=
+X-Google-Smtp-Source: APXvYqxjT3rle6wytGrP96q0hbcfc9HOxRUYFGY2tfKgnjOqGLk9jLROwPeb4DOZtAXfb2o71g3BG4RqdufeZXw3w0A=
+X-Received: by 2002:a92:6a04:: with SMTP id f4mr254194ilc.207.1569618484724;
+ Fri, 27 Sep 2019 14:08:04 -0700 (PDT)
+References: <98CC4DF3-3196-4110-AC59-B47D9F3FBDC2@stanford.edu>
+In-Reply-To: <98CC4DF3-3196-4110-AC59-B47D9F3FBDC2@stanford.edu>
+From: Clark Corbin <ccorbin@idahoednews.org>
+Date: Fri, 27 Sep 2019 15:07:52 -0600
+Message-ID: <CAMdy2uEO9QtC-bsARA4c7r51PyxaWfQns6oHjK+9Drgr5CKepw@mail.gmail.com>
+Subject: Re: Idaho Teacher Evaluation Data
+To: Lief Esbenshade <liefesbenshade@stanford.edu>
+Content-Type: multipart/mixed; boundary="000000000000373f6505938f4807"
+x-proofpoint-stanford-dir: inbound
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.95,1.0.8
+ definitions=2019-09-27_09:2019-09-25,2019-09-27 signatures=0
+X-CLX-Response: 1TFkXGBoYEQpMehcYGRgRCllEF2V4TX5uQXNQYl5+EQpYWBdpehwaTWhHRXh bQxEKeE4XemAZZRpGYR0YckYRCnlMF24baF8dS0VFTkhrEQp5QxdvaB5hHn9IfVJSUhEKQ0gXBx 4dHxEKQ1kXBx0RCllNF2dmchEKWUkXGnEaEBp3BhsSGHEbGRsQGncGGBoGGhEKWV4XaGN5EQpJR
+ hdZXktETEVYTnVCU01DT0RPdVpYRU5fSV5DRUR1QkVZXk9OEQpDThdYU0AYWXlpfXhtYhkcXVBz Qlp1Q2FzUhlza0NdcG1dGREKWFwXHwQaBBsSHgcfGE8ZE08YHQUbGgQbGxoEHhIEGxMTEBseGh8 aEQpeWRd/UmgdeREKTVwXGBkZEQpMWhdsaU1NaxEKTEYXbGtuEQpCTxd6UHhka1pSclpGRhEKQ1
+ oXGBoTBBIfBBscHAQeHhEKQl4XGxEKQlwXGhEKQkUXa0x6SEdNQgFPREcRCkJOF3pgGWUaRmEdG HJGEQpCTBdpehwaTWhHRXhbQxEKQmwXZRhPXWhmWFpvT34RCkJAF2Ece1NQeV1TXlkZEQpCWBdi H21/Wx5FeUFHZREKTV4XGxEKWlgXGREKcGcXbllPZHJwHBsYX2EQGRoRCnBoF2Bpa0ZkbUJmQU9
+ TEBkaEQpwaBdocB9fU2JcXWwYRhAZGhEKcGgXaX5/bk9yfnh9WEQQGRoRCnBoF2MFHlxEWkluRx lDEBkaEQpwaBdgbXJiaWJgeFhLHBAZGhEKcH0XYUVaYEIeS2BrcHIQGRoRCnB9F2B6WEdGQmZ5e hpnEBkaEQpwfRdtXhpdfGNHQntkZhAZGhEKcGsXemxsTkNeUENTY2QQGRoRCnBLF2NTEx9HRGkT
+ ZltAEBkaEQpwfxdpXEZfY0VAElAecxAbGRsRCnBfF2NMXB1+S2JbelxLEBkaEQpwfxdnZkBPeGR PHl9mXRAeEhEKcF8XZm1hHwUbExN8RWAQGRoRCnB/F25cextoT2dyYkcbEBkaEQpwXxdtXhpdfG NHQntkZhAZGhEKcGwXZEBrUBJBRUIdckUQGRoRCm1+FxsRClhNF0sRIA==
+X-CLX-Shades: MLX
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.95,1.0.8
+ definitions=2019-09-27_08:2019-09-25,2019-09-27 signatures=0
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 bulkscore=0 impostorscore=0
+ malwarescore=0 adultscore=0 spamscore=0 lowpriorityscore=0 suspectscore=0
+ mlxlogscore=999 priorityscore=232 phishscore=0 clxscore=202 mlxscore=0
+ classifier=spam adjust=0 reason=mlx scancount=1 engine=8.12.0-1908290000
+ definitions=main-1909270176
+Return-Path: ccorbin@idahoednews.org
+X-MS-Exchange-Organization-ExpirationStartTime: 27 Sep 2019 21:08:08.6594
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 945a1260-7988-4125-0c8e-08d7438ecc34
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 396573cb-f378-4b68-9bc8-15755c0c51f3:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report:
+ CIP:148.163.153.235;IPV:NLI;CTRY:US;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:CY4PR0201MB3409;H:mx0b-00000d04.pphosted.com;FPR:;SPF:None;LANG:en;
+X-MS-Exchange-Organization-AuthSource:
+ SN1NAM02FT062.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 945a1260-7988-4125-0c8e-08d7438ecc34
+X-Microsoft-Antispam:
+ BCL:0;PCL:0;RULEID:(2390118)(7020095)(4652040)(5600167)(711020)(4605104)(8001031)(1405096)(1407096)(1408068)(49563074)(71702078);SRVR:CY4PR0201MB3409;
+X-MS-TrafficTypeDiagnostic: CY4PR0201MB3409:
+X-MS-Exchange-PUrlCount: 3
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Oob-TLC-OOBClassifiers: OLM:10000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 Sep 2019 21:08:08.5373
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 945a1260-7988-4125-0c8e-08d7438ecc34
+X-MS-Exchange-CrossTenant-Id: 396573cb-f378-4b68-9bc8-15755c0c51f3
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR0201MB3409
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3142146
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2305.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(750127)(520011016)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?ajZIQytNckdKWTAzV0pHUnZKUXduQjhzSlh3ZjZpUUg2TTJ4SzQvdUhlcGsy?=
+ =?utf-8?B?VS9yOEozSkFRMlI1dzFrcit5NmJrQmZTeUU3MjJmSHVkUlhaamxWcE5Fb2Js?=
+ =?utf-8?B?SGhTTGNzRWowNVZUOFNlSVpnekxmbXRuRk41Zk1LL3ZsSFNVT0xMMFl2cXZ4?=
+ =?utf-8?B?WU50Yk5zb3YrL3czVDQvWnRMckRBNlIzSHdaWi9ZWDJHaHlCZzVkOXpUaU1U?=
+ =?utf-8?B?SjVyL0lXait6RG1iTytyUXdza3B2bUNFZ0tReFBYWWMzSDRkRWJmWWdsdTFL?=
+ =?utf-8?B?QjFON1JJVy94SDlYMU5jeE43Q2UraHlMTkRCTGREcFZEM0VYTTd2VnFKUy9o?=
+ =?utf-8?B?bkRObHgzUlBEa01RMG5XeDJnSkIxUUE3S0Z2L0RRY1NoREsrTURDelVaeUZL?=
+ =?utf-8?B?cmdjM05reXludFlON0VnZTNtNkcwWjB6UUdTV1oxaGpvNEQ2aWQ3R3F4c24y?=
+ =?utf-8?B?clFaMDdid3h2dnV0ZThuVHhpY0l0anBFaFd6aWpVVHIvM2I5MWQ3VFVMQmlK?=
+ =?utf-8?B?MTR0TytSKytSVlhzb29rQVB4RXdtUGRBR0l0VXMvaHFJWnoxK3FabE9MZU4x?=
+ =?utf-8?B?QVZPamNKZnlQRXd2MzZLaVJNamhzbVB2WFRwcktFb1lNdTV2OE1NbTRNVWNr?=
+ =?utf-8?B?bjcyMzU3c1N2M1p4TDFBdUQ5MW02a3pydEJkLzFXZXlhQlJ5cDY0L3dydDk3?=
+ =?utf-8?B?RDJMWnNocC85cWowU3hqU3cvR3pTdTNQa1d0K3c2U0luc2pWUXdETGthcTRM?=
+ =?utf-8?B?NERZY3VrME56L2xtU0NkR090Wmt5SWxEQjlBYjRhRm9wSWhlTzdwTTJvd0l1?=
+ =?utf-8?B?dW5LSGsyV3kwNFJIaWFtNm5LeGJjWWh5QmE5SXVKNUlUT3I2MjhmMTdKR0dO?=
+ =?utf-8?B?anNwMU5ncHY4ajFqNGRQaFMrZEVTeUhuK1JaKzZCQmErS0M0eDZkM3hWWlZs?=
+ =?utf-8?B?bzR1ZXl3bDM0LzdmU1o4dWpwMjFxYTZkSEI5ZWZhSkZLNHp0ZjFNZFVCVHJ3?=
+ =?utf-8?B?RXdQK2FSRUhWUWlFZmlrK0NQSjhRa2hqSnE4dG5mUnIza2FvRW5CRDJ6VkN2?=
+ =?utf-8?B?eCsxTEY0dVA2Mk1EM0lEeS9uUG9yWjhFVm12c3Z2enVzaFZ1aXVVSVVCbUV4?=
+ =?utf-8?B?UnVhNFVXWUVYdXBMTmRPRWNtNjEzenhRbk5kRStnOHJ0S3lXUjYyL1B4Vmxt?=
+ =?utf-8?B?cThKRW0vZ21BOXVacEg0TUtKRnFpZmdzZ0dTMHk1SklyTURRYnZ5UmJzc2JZ?=
+ =?utf-8?B?Q1lWRGhlSERya2dYOVJSU3F3S2h6Zy9JZzQ0dHRnamRxeEk0amZ6SGhFQlho?=
+ =?utf-8?B?dDhwRWdxc1RqcmdBU1drWm1hK3N0OHBGYlRKc2d2RU1aZTNyZ0kvLzdXY1BS?=
+ =?utf-8?B?ZElFSHFSY2tzL1o4MjBqWUtQTHFGdXpkTjdPTWpUYmYzdDZXM2xyUjgzYVZT?=
+ =?utf-8?B?RXVQU0FoZERHRUhJdkVkK0JXSHpBSlJoOW9oTmhHU2VlbGQzVXBOcWc3WHhQ?=
+ =?utf-8?B?MW0zZnNXU2JFcmJBNnRhS0o3RzNHalJJckJTSjFIQTVwVTFVVng5UW53MFRq?=
+ =?utf-8?B?aHZEVFV4K2xONk8rQ2lOUGpYUTlESUN6T0dick1Pc2p4RUtaK1Y1K1RWS3pZ?=
+ =?utf-8?B?dXFuMzhaTzRZbzR3OXZ1N2dIL0dnOEZqZFhpVzhLcko0cnZINXJTZkhBakZO?=
+ =?utf-8?Q?4kn50lu5NDnJqXSusA8N?=
+MIME-Version: 1.0
+
+--000000000000373f6505938f4807
+Content-Type: multipart/alternative; boundary="000000000000373f6105938f4805"
+
+--000000000000373f6105938f4805
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Lief,
+
+Thank you so much for reading my article and writing in. At Idaho Education
+News, we obtained teacher evaluation data, broken down by each school
+district, for all 18,000-plus Idaho teachers from the most recent 2018-19
+school year. We obtained this via a public records request from the Idaho
+State Department of Education.
+While I did find some districts are starting to differential teachers more,
+the overall trend I identified was that, statewide, administrators reported
+the highest percentage of teachers receiving one of the top two evaluation
+scores (distinguished and proficient) in the 5 years that I have been
+studying the data and attempting to make sense of evaluation.That makes it
+really hard to differentiate between schools and districts and identify
+problem areas vs high performance areas.
+
+ In Idaho, it is required by law that all teachers are evaluated each year,
+and our system is aligned to the Charlotte Danielson Framework for Teaching
+(although some districts diverge slightly, for instance they may only award
+three overall scores, not four).
+
+I will attach the spreadsheet that we generated after obtaining the evals
+data from the SDE. You will notice there are four scores a teacher could
+earn (unsatisfactory, basic, proficient and distinguished). We added
+columns E and F so we could track what percentage of teachers were
+proficient and what percentage of teachers scored either proficient or
+distinguished, because that was what I was interested in identifying with
+my reporting.
+
+If you also want to obtain the data directly from the source, it is
+considered a public record in Idaho and available by requesting it from the
+State Department of Education. We obtained the data from Kelly Everitt and
+the contact info for his department is online here:
+http://www.sde.idaho.gov/communications/staff.html
+
+Once you review the spreadsheet, please let me know if you have any
+questions. I worked on this report with our data analyst Randy Schrader,
+who used to be a school superintendent in Idaho before he joined our team
+at Idaho Ed News. He would be a great contact point if you have questions
+about the data or Idaho's policies. His email is rschrader@idahoednews.org.
+
+I hope this helps. I would love to stay in touch and look at any research
+you publish on the topic that includes Idaho. Speaking candidly, tracking
+and making sense of teacher evaluation data has been extremely difficult,
+we have gotten significant pushback from school administrators and I
+believe some of the data in inaccurately reported, because it is tied to
+how much money the state sends school districts for salaries. Because of
+that tie to salary appropriation, some state legislators believe there is a
+financial incentive for administrators to report to the state that all of
+their teachers are proficient, even if that isn't the case.
+
+I hope this helps and I would love to see any research you have.
+
+Clark
+
+
+
+On Fri, Sep 27, 2019 at 1:14 PM Lief Esbenshade <liefesbenshade@stanford.ed=
+u>
+wrote:
+
+> Hello Mr. Corbin,
+>
+> My name is Lief Esbenshade and I am a doctoral candidate at Stanford
+> Graduate School of Education, my research focuses on teacher labor market=
+s
+> and teacher evaluations. I=E2=80=99m currently working on analyzing the t=
+eacher
+> evaluation systems that have been implemented across the country since Ra=
+ce
+> to the Top. I=E2=80=99m trying to find data from Idaho to include in my r=
+esearch
+> and came across your article
+> <https://www.idahoednews.org/news/98-percent-of-idaho-teachers-earn-top-m=
+arks-on-evaluations/>.
+> I=E2=80=99m intrigued by your notes about the changes in the evaluation r=
+atings
+> over time, and how some administrators are differentiating teachers more =
+-
+> in other states I=E2=80=99ve seen the opposite pattern.
+>
+> Unfortunately, I=E2=80=99ve been unable to find a copy of the data you re=
+ference
+> as being released by the Idaho State Department of Education. Ideally, I
+> would like to find records that include the number of teachers receiving
+> each rating (as well as unrated) for each school district in Idaho from
+> 2015 through 2019. Do you have any suggestions on where I could find that
+> data publicly available?
+>
+> Thank you very much for your time,
+> -Lief Esbenshade
+>
+> Doctoral Candidate, Economics of Education
+> Stanford University
+> (503) 576 -1616
+>
+
+
+--=20
+Clark Corbin
+Reporter
+Idaho Education News
+www.idahoednews.org
+(208) 313-8550 - cell
+@IdahoEdNews
+@clarkcorbin
+
+--000000000000373f6105938f4805
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr">Hi Lief,<div><br><div>Than=
+k you so much for reading my article and writing in. At Idaho Education New=
+s, we obtained teacher evaluation data, broken down by each school district=
+, for all 18,000-plus Idaho teachers from the most recent 2018-19 school ye=
+ar. We obtained this via a public records request from the Idaho State Depa=
+rtment of Education.&nbsp;</div><div>While I did find some districts are st=
+arting to differential teachers more, the overall trend I identified was th=
+at, statewide, administrators reported the highest percentage of teachers r=
+eceiving one of the top two evaluation scores (distinguished and proficient=
+) in the 5 years that I have been studying the data and attempting to make =
+sense of evaluation.That makes it really hard to differentiate between scho=
+ols and districts and identify problem areas vs high performance areas.</di=
+v><div><br></div><div>&nbsp;In Idaho, it is required by law that all teache=
+rs are evaluated each year, and our system is aligned to the Charlotte Dani=
+elson Framework for Teaching (although some districts diverge slightly, for=
+ instance they may only award three overall scores, not four).</div><div><b=
+r></div><div>I will attach the spreadsheet that we generated after obtainin=
+g the evals data from the SDE. You will notice there are four scores a teac=
+her could earn (unsatisfactory, basic, proficient and distinguished). We ad=
+ded columns E and F so we could track what percentage of teachers were prof=
+icient and what percentage of teachers scored either proficient or distingu=
+ished, because that was what I was interested in identifying with my report=
+ing.&nbsp;</div><div><br></div><div>If you also want to obtain the data dir=
+ectly from the source, it is considered a public record in Idaho and availa=
+ble by requesting it from the State Department of Education. We obtained th=
+e data from Kelly Everitt and the contact info for his department is online=
+ here:&nbsp;<a href=3D"http://www.sde.idaho.gov/communications/staff.html">=
+http://www.sde.idaho.gov/communications/staff.html</a></div><div><br></div>=
+<div>Once you review the spreadsheet, please let me know if you have any qu=
+estions. I worked on this report with our data analyst Randy Schrader, who =
+used to be a school superintendent in Idaho before he joined our team at Id=
+aho Ed News. He would be a great contact point if you have questions about =
+the data or Idaho's policies. His email is <a href=3D"mailto:rschrader@idah=
+oednews.org">rschrader@idahoednews.org</a>.</div><div><br></div><div>I hope=
+ this helps. I would love to stay in touch and look at any research you pub=
+lish on the topic that includes Idaho. Speaking candidly, tracking and maki=
+ng sense of teacher evaluation data has been extremely difficult, we have g=
+otten significant pushback from school administrators and I believe some of=
+ the data in inaccurately reported, because it is tied to how much money th=
+e state sends school districts for salaries. Because of that tie to salary =
+appropriation, some state legislators believe there is a financial incentiv=
+e for administrators to report to the state that all of their teachers are =
+proficient, even if that isn't the case.</div><div><br></div><div>I hope th=
+is helps and I would love to see any research you have.</div><div><br></div=
+><div>Clark&nbsp;</div><div><br></div><div><br></div></div></div></div></di=
+v><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On F=
+ri, Sep 27, 2019 at 1:14 PM Lief Esbenshade &lt;<a href=3D"mailto:liefesben=
+shade@stanford.edu">liefesbenshade@stanford.edu</a>&gt; wrote:<br></div><bl=
+ockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-lef=
+t-width:1px;border-left-style:solid;border-left-color:rgb(204,204,204);padd=
+ing-left:1ex">
+
+
+
+<div style=3D"word-wrap:break-word;line-break:after-white-space">
+Hello Mr. Corbin,&nbsp;
+<div><br>
+</div>
+<div>My name is Lief Esbenshade and I am a doctoral candidate at Stanford G=
+raduate School of Education, my research focuses on teacher labor markets a=
+nd teacher evaluations. I=E2=80=99m currently working on analyzing the teac=
+her evaluation systems that have
+ been implemented across the country since Race to the Top. I=E2=80=99m try=
+ing to find data from Idaho to include in my research and came across&nbsp;=
+<a href=3D"https://www.idahoednews.org/news/98-percent-of-idaho-teachers-ea=
+rn-top-marks-on-evaluations/" target=3D"_blank">your article</a>.
+ I=E2=80=99m intrigued by your notes about the changes in the evaluation ra=
+tings over time, and how some administrators are differentiating teachers m=
+ore - in other states I=E2=80=99ve seen the opposite pattern.&nbsp;</div>
+<div><br>
+</div>
+<div>Unfortunately, I=E2=80=99ve been unable to find a copy of the data you=
+ reference as being released by the Idaho State Department of Education. Id=
+eally, I would like to find records that include the number of teachers rec=
+eiving each rating (as well as
+ unrated) for each school district in Idaho from 2015 through 2019. Do you =
+have any suggestions on where I could find that data publicly available?&nb=
+sp;</div>
+<div><br>
+</div>
+<div>Thank you very much for your time,</div>
+<div>-Lief Esbenshade</div>
+<div><br>
+</div>
+<div>Doctoral Candidate, Economics of Education</div>
+<div>Stanford University</div>
+<div>(503) 576 -1616</div>
+</div>
+
+</blockquote></div><br clear=3D"all"><div><br></div>-- <br><div dir=3D"ltr"=
+ class=3D"gmail_signature"><div dir=3D"ltr">Clark Corbin<div>Reporter</div>=
+<div>Idaho Education News</div><div><a href=3D"http://www.idahoednews.org" =
+target=3D"_blank">www.idahoednews.org</a></div><div>(208) 313-8550 - cell</=
+div><div>@IdahoEdNews</div><div>@clarkcorbin</div></div></div>
+
+--000000000000373f6105938f4805--
+
+--000000000000373f6505938f4807
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; 
+	name="2019 Evals Sorted.xlsx"
+Content-Disposition: attachment; filename="2019 Evals Sorted.xlsx"
+Content-Transfer-Encoding: base64
+Content-ID: <f_k12m1sup0>
+X-Attachment-Id: f_k12m1sup0
+
+UEsDBBQABgAIAAAAIQCkBM/pcQEAAJgFAAATAAgCW0NvbnRlbnRfVHlwZXNdLnhtbCCiBAIooAAC
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADE
+lM9uwjAMxu+T9g5VrlMb4DBNE4UD244b0tgDZImhEWkSxYHB288NfzRNHQhRaZdGbeLv+9mNPRxv
+apOtIaB2tmT9oscysNIpbRcl+5i95A8swyisEsZZKNkWkI1HtzfD2dYDZhRtsWRVjP6Rc5QV1AIL
+58HSztyFWkR6DQvuhVyKBfBBr3fPpbMRbMxjo8FGwyeYi5WJ2fOGPu9IAhhk2WR3sPEqmfDeaCki
+kfK1Vb9c8r1DQZHpDFba4x1hMN7q0Oz8bbCPe6PSBK0gm4oQX0VNGHxj+JcLy0/nlsVpkRZKN59r
+CcrJVU0VKNAHEAorgFibIq1FLbQ9cJ/wT4eRp6XfMUiTXxK+kGPwTxyR7h3w9Ly+FEnmTOIYtwaw
+69+fRM85VyKAeo+BOrRzgJ/aZzikMHJS0VXtuAhH3VP+1D/T4DzSJAlwOcBhVDTRuSchCFHDcVi0
+Nd3RkabQ1RlDM+cUqBZvnubq6BsAAP//AwBQSwMEFAAGAAgAAAAhALVVMCP0AAAATAIAAAsACAJf
+cmVscy8ucmVscyCiBAIooAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAACskk1PwzAMhu9I/IfI99XdkBBCS3dBSLshVH6ASdwPtY2jJBvdvycc
+EFQagwNHf71+/Mrb3TyN6sgh9uI0rIsSFDsjtnethpf6cXUHKiZylkZxrOHEEXbV9dX2mUdKeSh2
+vY8qq7iooUvJ3yNG0/FEsRDPLlcaCROlHIYWPZmBWsZNWd5i+K4B1UJT7a2GsLc3oOqTz5t/15am
+6Q0/iDlM7NKZFchzYmfZrnzIbCH1+RpVU2g5abBinnI6InlfZGzA80SbvxP9fC1OnMhSIjQS+DLP
+R8cloPV/WrQ08cudecQ3CcOryPDJgosfqN4BAAD//wMAUEsDBBQABgAIAAAAIQD+aepXCgEAAMwD
+AAAaAAgBeGwvX3JlbHMvd29ya2Jvb2sueG1sLnJlbHMgogQBKKAAAQAAAAAAAAAAAAAAAAAAAAAA
+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
+9vvzl4tfjy+vT6ev7y/zq+zy4vj18fTx6etP7y//+Z/333eXF69vD18/Pnw5fT2+v/zj+Hr5tw//
++i/vfju9/Pz6+Xh8u6AWvr6+v/z89vbt5vr69fHz8fnh9er07fiVKJ9OL88Pb/R/X366fv32cnz4
+6B56/nJdZFlz/fzw9PVybOHmZU0bp0+fnh6Pd6fHX56PX9/GRl6OXx7eqP+vn5++vU6tPT+uae75
+4eXnX759/3h6/kZN/Pj05entD9fo5cXz483hp6+nl4cfv9B3/55XD48Xv7/Qn4L+V06vcf9u3vT8
+9Phyej19eruilq/HPtvP76/764dH35L9/lXN5NX1y/HXp0GBc1PFn+tSXvu2irmx8k821vjGBnG9
+3Pzy9PH95f9m/Ot7+jsffmTzj4n2f5cf3n18Ig0PX3Xxcvz0/vLv+c0hb4vL6w/v3Aj6r6fjb6/i
+vy/eHn784fjl+Ph2pLfklxfDAP3xdPp5YDzQP2XU5qtjGNp8eHx7+vV4e/zy5f3lYRjj/+PeQv9J
+L7j2b5D/Pb3t3g3pf3+5+PHh9Xh7+vLfTx/fPtMraep8PH56+OXL23+cftsfn376/Eb/2tCnD2Pn
+5uMfd8fXRxq01JUr9x2Ppy/UJv28eH4aJh+NuYffx75PTV51ZZGVeVEPs/CPYSCWQwf9M6Ql9wz9
+/dv4TNlf5U2VNeqRi8dfXt9Oz1NPVROkG9cE/c1N5OVVaV8ba6PiNujvqY081I0fj69v90+DWC5j
+zdHXui7R31NzmZVErT6D5Oyeob+nZ+qrJkkSLTdBf0deqxVAQ8e9lv7+09LrJ8U3ZSckGPhk9+7r
+cdy4MXr38Pbw4d3L6bcLsh4k1NdvD4Mtzm+oTfqbhsWo+XHMOpZhVJb0muCopKE1tPT3oSn3ODG/
+0sT59UP27vpXmg2PzLGxHLnmuLUcpea4sxyV5tiOHKQQ34+yrjXPfeA9daN5dpYHWtlbDmjjEHpP
+599zTUrwmiC5S01ERT3wDtN6/sQ8AzFsQjzwAbcjTxVS1p2k5SWoYTtSG/ckKPF+pn368MM///GX
+u+K72+Kv14fi3fWnYVgA/y7Si32Edpi+0LUpeqjESkJaLdaBF8Sag0Y3IZ4WRvHIExarpJUgie1I
+DEt1pn1yav/88HL8eDkudPflzX1DVuz1ya1ZTujld7clCZ0UFxR6pI/7CO0wff8gdNF/JXOyFKtl
+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
+AA==
+
+--000000000000373f6505938f4807--

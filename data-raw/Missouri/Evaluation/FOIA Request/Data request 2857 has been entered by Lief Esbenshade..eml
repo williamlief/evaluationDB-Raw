@@ -1,0 +1,167 @@
+Received: from MWHPR02MB3165.namprd02.prod.outlook.com (2603:10b6:300:93::13)
+ by MWHPR0201MB3417.namprd02.prod.outlook.com with HTTPS via
+ MWHPR17CA0051.NAMPRD17.PROD.OUTLOOK.COM; Sun, 3 Nov 2019 22:30:30 +0000
+Received: from BN7PR02CA0004.namprd02.prod.outlook.com (2603:10b6:408:20::17)
+ by MWHPR02MB3165.namprd02.prod.outlook.com (2603:10b6:301:61::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2408.24; Sun, 3 Nov
+ 2019 22:30:26 +0000
+Received: from CY1NAM02FT021.eop-nam02.prod.protection.outlook.com
+ (2a01:111:f400:7e45::206) by BN7PR02CA0004.outlook.office365.com
+ (2603:10b6:408:20::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2408.24 via Frontend
+ Transport; Sun, 3 Nov 2019 22:30:25 +0000
+Authentication-Results: spf=fail (sender IP is 148.163.153.235)
+ smtp.mailfrom=dese.mo.gov; o365.stanford.edu; dkim=pass (signature was
+ verified) header.d=dese.mo.gov;o365.stanford.edu; dmarc=pass action=none
+ header.from=dese.mo.gov;compauth=pass reason=100
+Received-SPF: Fail (protection.outlook.com: domain of dese.mo.gov does not
+ designate 148.163.153.235 as permitted sender)
+ receiver=protection.outlook.com; client-ip=148.163.153.235;
+ helo=mx0b-00000d04.pphosted.com;
+Received: from mx0b-00000d04.pphosted.com (148.163.153.235) by
+ CY1NAM02FT021.mail.protection.outlook.com (10.152.75.187) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2387.20 via Frontend Transport; Sun, 3 Nov 2019 22:30:24 +0000
+Received: from pps.filterd (m0102891.ppops.net [127.0.0.1])
+	by mx0a-00000d04.pphosted.com (8.16.0.42/8.16.0.42) with SMTP id xA3MSYtO009166
+	for <wesben@o365.stanford.edu>; Sun, 3 Nov 2019 14:30:23 -0800
+Authentication-Results-Original: ppops.net;	spf=fail
+ smtp.mailfrom=dsm@dese.mo.gov;	dkim=pass header.s=20180514
+ header.d=dese.mo.gov;	dmarc=pass header.from=dese.mo.gov
+Received: from mx0b-00000d03.pphosted.com (mx0b-00000d03.pphosted.com [148.163.153.234])
+	by mx0a-00000d04.pphosted.com with ESMTP id 2w16rkbpe5-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <wesben@o365.stanford.edu>; Sun, 03 Nov 2019 14:30:23 -0800
+Received: from pps.filterd (m0190090.ppops.net [127.0.0.1])
+	by mx0a-00000d03.pphosted.com (8.16.0.42/8.16.0.42) with SMTP id xA3MU52T010715
+	for <liefEsbenshade@stanford.edu>; Sun, 3 Nov 2019 14:30:23 -0800
+Received: from oa.mo.gov (momail3.mo.gov [168.166.15.220])
+	by mx0a-00000d03.pphosted.com with ESMTP id 2w19cbftkx-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <liefEsbenshade@stanford.edu>; Sun, 03 Nov 2019 14:30:23 -0800
+Received: from pps.filterd (momail3.mo.gov [127.0.0.1])
+	by momail3.mo.gov (8.16.0.27/8.16.0.27) with SMTP id xA3MT2dG031300
+	for <liefEsbenshade@stanford.edu>; Sun, 3 Nov 2019 16:30:22 -0600
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=dese.mo.gov; h=from : to : subject
+ : date : message-id : mime-version : content-type :
+ content-transfer-encoding; s=20180514;
+ bh=uk61CR9eIKFEEN7CBK4b1Oo/b79zbJec3Zhv6ib8iuw=;
+ b=E6+YfxXT7xaKuU0C+r6CTII5IEaKLIBylwbTtwawG+sLC3IuRfRIyx6gurH80hnHCKSp
+ 8og8+bv1dSNda8zvkBn+WsZZNhXddOUK9PupB0gZUaFqXu0rulhTfqjCWXVTLKGelINy
+ DPsf49I7Vzxn0F5XKl01amQ6MkvqV32DADzRuNYNHUoM4yozbq+zK9RLKp72ekb8CN9t
+ 8SwmWIAoYjDyAHUCa9v2Yaq8ugmAv+EIHDRdcgYUSGHDULrywrsNzZL1MTfT/IfCX4d9
+ W/LaNiYfUylA9f8eaAQXznh4o6KewDgxq5ko6Cv+BFRrm4ZY37ruZrVcKUriZoCKjYXa MA== 
+thread-index: AdWSlkexStwpdRWNQC+3cjT4GUEs+A==
+Thread-Topic: Data request 2857 has been entered by Lief Esbenshade.
+From: <dsm@dese.mo.gov>
+To: <liefEsbenshade@stanford.edu>
+Subject: Data request 2857 has been entered by Lief Esbenshade.
+Date: Sun, 3 Nov 2019 16:30:22 -0600
+Message-ID: <3B183D3E295042B09DF2772D2DEB931C@state.mo.us>
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Mailer: Microsoft CDO for Windows 2000
+Content-Class: urn:content-classes:message
+X-MimeOLE: Produced By Microsoft MimeOLE V6.3.9600.19431
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:,, definitions=2019-11-03_15:,,
+ signatures=0
+x-proofpoint-stanford-dir: inbound
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.95,1.0.8
+ definitions=2019-11-03_15:2019-11-01,2019-11-03 signatures=0
+X-CLX-Response: 1TFkXGx0SEQpMehcaEQpZRBdsGQV/XkFoRXgZHBEKWFgXa2VFQG97bEFNY0s RCnhOF2BmGEVvU0VrYWBhEQp5TBdvYBIYWWJaBWNrUhEKeUMXYEMdYUFwYHB+ZhwRCkNIFwcZGB kRCkNZFwcSGREKWU0XZ2ZyEQpZSRcacRoQGncGGx8ScRkdEBp3BhgaBhoRClleF2xseREKSUYXW
+ V5LRExFWE51QlNNQ09ET3VaWEVOX0leQ0VEdUJFWV5PThEKQ04XW0YaWlByT2ZDE1trQhhpbkJn TXhBQ0V6c0x7aFJnSH8RClhcFx8EGgQbEh0HE0wcSx8dSRoFGxoEGxsaBB4SBBsTExAbHhofGhE KXlkXfxN6R0sRCk1cFx4fGREKTFoXaENNTWsRCkVZF29raxEKTEYXb2tra2tuEQpCTxdkR2JvGV
+ lGXWRlQxEKQ1oXGxwSBBscHAQbHwQYGBoRCkJeFxsRCkJcFxsRCkJLF2Z8SUZhY3xpQGVJEQpCS RdgZhhFb1NFa2FgYREKQkUXZWRpWFBQQX1SWlsRCkJOF2BmGEVvU0VrYWBhEQpCTBdrZUVAb3ts QU1jSxEKQmwXa2VFQG97bEFNY0sRCkJAF3pZTFBtGG5TZ2d8EQpCWBdiH21/Wx5FeUFHZREKWlg
+ XGREKcGcXbGlSWAUZG25ATm4QGRoRCnBoF25kExlzZ34TTWddEBkaEQpwaBdrfxITQHJiBR9lQx AZGhEKcGgXent9W2gaTHJNW1sQGRoRCnBoF2IfeX5/QGVHcx0aEBkaEQpwaBdmZWQTZx5QRBlcQ xAZGhEKcH0XehweWR9efEJhcE0QGRoRCnB/F2VbWxheZGN4S2UTEBsYHBEKcF8XaBIaHF1Gb1lN
+ YFkQGRoRCm1+FxoRClhNF0sRIA==
+X-CLX-Shades: MLX
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.95,1.0.8
+ definitions=2019-11-03_15:2019-11-01,2019-11-03 signatures=0
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 phishscore=0 spamscore=0 mlxscore=0
+ impostorscore=0 lowpriorityscore=0 mlxlogscore=999 bulkscore=0
+ suspectscore=0 adultscore=0 clxscore=178 priorityscore=0 malwarescore=0
+ classifier=spam adjust=0 reason=mlx scancount=1 engine=8.12.0-1908290000
+ definitions=main-1911030235
+Return-Path: dsm@dese.mo.gov
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Nov 2019 22:30:24.6677
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ aabcd469-24e9-4abc-e331-08d760ad6b93
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 396573cb-f378-4b68-9bc8-15755c0c51f3:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report:
+ CIP:148.163.153.235;IPV:NLI;CTRY:US;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:MWHPR02MB3165;H:mx0b-00000d04.pphosted.com;FPR:;SPF:None;LANG:en;
+X-MS-Exchange-Organization-AuthSource:
+ CY1NAM02FT021.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: aabcd469-24e9-4abc-e331-08d760ad6b93
+X-MS-TrafficTypeDiagnostic: MWHPR02MB3165:
+X-MS-Exchange-PUrlCount: 1
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Oob-TLC-OOBClassifiers: OLM:6108;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Nov 2019 22:30:24.3915
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: aabcd469-24e9-4abc-e331-08d760ad6b93
+X-MS-Exchange-CrossTenant-Id: 396573cb-f378-4b68-9bc8-15755c0c51f3
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MWHPR02MB3165
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.6152984
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2387.030
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(750127)(520011016)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?0HLjQz0BKHEHgQDBb2+8MkX4lSCG3BuwS+yVRAZGjfZhDrpBuftM2FUn1z?=
+ =?iso-8859-1?Q?ciYAIXiOB8Ttiy7Elmx4tv4f46WSU9wz6DBLP4ja+tjisR62cHfRcaPyFj?=
+ =?iso-8859-1?Q?XGxktxwlZ6iHK98XhcbVOMzQxb6+dXfadtpjpS20veSVOq8lkGzQKIW6H9?=
+ =?iso-8859-1?Q?d+gZS5WHZesNt4dH6FNP+fKVQbMERGA/T5GPUO67o3BQHsWUQJMmcmheW/?=
+ =?iso-8859-1?Q?5pJL22B2GvJ21BhmrYF1hXS1kdIv9NMpqHBBEYtu2pFnhPdbmCFr/jO03E?=
+ =?iso-8859-1?Q?o2bsMriVNMOL9Cnn/gLPB98/QJKvPmr/rZx+nrPQdcngYV8EZE/0UWTCus?=
+ =?iso-8859-1?Q?2nSi/ldjOBLz60YpD+CGIodqWFNnqjIeNaWP62SoRWOrq2/DJ45a1c7gDB?=
+ =?iso-8859-1?Q?yQptg9P/DNDG3nQZgUz1YVry4kOwree5LCsXRaMgNSOLt6brlyYBY5tpmh?=
+ =?iso-8859-1?Q?TnnYzgweEplREVMht22o8QVK6vMrHPIFjRltyHlUBs/XTX6bwX+UTLdIDM?=
+ =?iso-8859-1?Q?ij2bBGovr3mxCaq5CKlzSMzF8VE2r4pqdDoREkjNG5NjAT9wqGaN5HA0GR?=
+ =?iso-8859-1?Q?F2X8kTpNoIWLtYs3jrBVRPqiMFTD8ByJrEqNSGfV7cH15yhHos1sP2rxD+?=
+ =?iso-8859-1?Q?aMpm7Rma3HDZhrTWz3djZ58YM4VMQD5oXnR2vhPo4SIDhNVGt/MMZkMt4q?=
+ =?iso-8859-1?Q?pyYMuf9UGuv3j7BADhWHVyvKE0PSKn12KcWWZAdhkNyDDgpYiR0134VPg5?=
+ =?iso-8859-1?Q?zFTAYsLrxC+DkFRPfY+VFvRlgON5bXPK8pnLa4nAG8QTro/1w3Om2YTlHm?=
+ =?iso-8859-1?Q?UbOWyc3mKf8GOn3N59loPMElrQ/R0ZALXnusVzY9/vFFNqfYRtRGNOczU9?=
+ =?iso-8859-1?Q?x4I7RWWiyp5yTWomYGns82oAdRPnTUFf7NAxQXZe78ieGAUAHMcD5IHNdV?=
+ =?iso-8859-1?Q?iI1mE8fJk3cvZmsLVNmER3pT0f1ymKctsLxEntmO2Rqmc/F1o2nJGqvVoM?=
+ =?iso-8859-1?Q?3K/EyRqVxALYGq0CoMxIlXo4esQJaCZePsJSDQ3BwOQVcPFfbdLTprdjSD?=
+ =?iso-8859-1?Q?0KcxJrgPMrABcR8FJyC8vN6Y8fWeobvhFlK4Y9zYW1SryIl6UdWn3OOS/o?=
+ =?iso-8859-1?Q?lbjR2CZofPUzWsy9yahprR0TIbdtwhsvCTYhMw+EKun2PProZCqJjMC68H?=
+ =?iso-8859-1?Q?8aWpG1uj0lCZkWYF5ZmRhwjeaaAKtZAda+0ZFhpJajz4XuHl10bnXd0gvF?=
+ =?iso-8859-1?Q?nF+Nn46kxPGUQJOjphcnONbNl65r9ZeT9g2vQpnmt/NpzG9Y70//CuQ7mS?=
+ =?iso-8859-1?Q?ixIx?=
+MIME-Version: 1.0
+
+This is an automated confirmation that the Department of Elementary and Secondary Education has received your data request. 
+
+Request Number 2857 has been created by Lief Esbenshade, Doctoral Candidate of Stanford University
+Requestor: Researcher
+Phone: 503-576-1616
+Email: liefEsbenshade@stanford.edu
+Date Requested: 11-03-2019
+Date Needed By: 12/31/2019
+Data Format: Excel
+Request:  I am requesting the count of teachers in each school who received each level of teacher evaluation in each year. For 2011-2016 data I would like to know the uses of the evaluations and whether student achievement/growth data was used. For 2017-2019 I would like to know the evaluation model used. I would like a single file containing the information that is available here as individual school reports: https://apps.dese.mo.gov/MCDS/Reports/SSRS_Print.aspx. The attached example file shows the desired file layout with an example for one school.
+Purpose:  I am researching the variability in teacher evaluation results across school districts and within states. This data will be used for academic research purposes.
+Level of Aggregation: Building Level
+School Years Needed: 2011 through 2019
+Grade Level(s): K-12
+
+District/Lea Type: All Public LEAs
+Building Level(s): All
+Data Request Type: Dissertation/Research
+Please allow approximately two weeks for your data to be reviewed. If you do not hear from our office within two weeks, please send an email to dsm@dese.mo.gov.  During peak times (June - August) the estimated time to review your data request is 3-4 weeks, minimally. 
+
+Thanks,  
+ODSM  
+File Uploaded at <\\ed-dese-fileb\dep\dc\Data_Requests__Uncategorized\Web_Requests\Esbenshade_example.xlsx>

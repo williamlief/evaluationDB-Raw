@@ -1,0 +1,192 @@
+Received: from DM5PR0201MB3413.namprd02.prod.outlook.com (2603:10b6:104:5::29)
+ by MWHPR0201MB3417.namprd02.prod.outlook.com with HTTPS via
+ CO2PR04CA0199.NAMPRD04.PROD.OUTLOOK.COM; Fri, 27 Sep 2019 22:37:24 +0000
+Received: from SN6PR02CA0033.namprd02.prod.outlook.com (52.135.118.174) by
+ DM5PR0201MB3413.namprd02.prod.outlook.com (10.167.105.142) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2284.26; Fri, 27 Sep 2019 22:37:23 +0000
+Received: from BL2NAM02FT046.eop-nam02.prod.protection.outlook.com
+ (2a01:111:f400:7e46::203) by SN6PR02CA0033.outlook.office365.com
+ (2603:10b6:805:a2::46) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2220.19 via Frontend
+ Transport; Fri, 27 Sep 2019 22:37:23 +0000
+Authentication-Results: spf=fail (sender IP is 148.163.153.235)
+ smtp.mailfrom=jotform.com; o365.stanford.edu; dkim=none (message not signed)
+ header.d=none;o365.stanford.edu; dmarc=none action=none
+ header.from=sde.idaho.gov;compauth=softpass reason=201
+Received-SPF: Fail (protection.outlook.com: domain of jotform.com does not
+ designate 148.163.153.235 as permitted sender)
+ receiver=protection.outlook.com; client-ip=148.163.153.235;
+ helo=mx0b-00000d04.pphosted.com;
+Received: from mx0b-00000d04.pphosted.com (148.163.153.235) by
+ BL2NAM02FT046.mail.protection.outlook.com (10.152.76.118) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2284.25 via Frontend Transport; Fri, 27 Sep 2019 22:37:22 +0000
+Received: from pps.filterd (m0102896.ppops.net [127.0.0.1])
+	by mx0a-00000d04.pphosted.com (8.16.0.42/8.16.0.42) with SMTP id x8RMX4OO024998
+	for <wesben@o365.stanford.edu>; Fri, 27 Sep 2019 15:37:22 -0700
+Authentication-Results-Original: ppops.net;	spf=fail
+ smtp.mailfrom=noreply@jotform.com;	dmarc=none
+Received: from mx0b-00000d03.pphosted.com (mx0b-00000d03.pphosted.com [148.163.153.234])
+	by mx0a-00000d04.pphosted.com with ESMTP id 2v8j0f2x8y-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <wesben@o365.stanford.edu>; Fri, 27 Sep 2019 15:37:21 -0700
+Received: from pps.filterd (m0102882.ppops.net [127.0.0.1])
+	by mx0a-00000d03.pphosted.com (8.16.0.42/8.16.0.42) with SMTP id x8RMZCU2021492
+	for <liefEsbenshade@stanford.edu>; Fri, 27 Sep 2019 15:37:21 -0700
+Received: from pool3-283.formresponse.com (pool3-283.formresponse.com [152.160.251.181])
+	by mx0a-00000d03.pphosted.com with ESMTP id 2v6hnke153-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <liefEsbenshade@stanford.edu>; Fri, 27 Sep 2019 15:37:20 -0700
+Received: from go-sub-z7j8 (pool3-271.formresponse.com [152.160.251.168])
+	by pool3-283.formresponse.com (Postfix) with ESMTP id A12121BC0849
+	for <liefEsbenshade@stanford.edu>; Fri, 27 Sep 2019 18:37:19 -0400 (EDT)
+Received: by go-sub-z7j8 (Postfix, from userid 1100)
+	id 86BC8BBD1A; Fri, 27 Sep 2019 18:37:19 -0400 (EDT)
+To: liefEsbenshade@stanford.edu
+Subject: We have received your Public Records Request Form
+Date: Fri, 27 Sep 2019 18:37:19 -0400
+From: JotForm <publicrecords@sde.idaho.gov>
+Reply-To: sphillips@sde.idaho.gov
+Message-ID: <3aa4c9d7cd7a35dc1b983fcbea473751@localhost.localdomain>
+X-Related-FormID: 92256797986178
+X-Related-UserName: NoUserName
+X-Related-Last-Form-ID: 92256797986178
+X-Related-IP: 128.12.122.12
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+x-proofpoint-stanford-dir: inbound
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.95,1.0.8
+ definitions=2019-09-27_09:2019-09-25,2019-09-27 signatures=0
+X-CLX-Response: 1TFkXHhsbEQpMehcaEQpZRBdlGWMFZnMdHHpDExEKWFgXaWMdTHgTc1NZTGU RCnhOF29rGhtTSERJZRhoEQp4SxdpYx1MeBNzU1lMZREKeUMXYRhCUl8cS2VNWVwRCkNIFwcYHx IRCkNZFwcbGRoRCllNF2dmchEKWUkXHBpxGwYbGBp3BhsdHgYdGEIZBhoGGxoaBhpxGhAadwYaB
+ hsaBhoGBx8GGgYacRoQGncGGhEKWV4XY2N5EQpJRhdZXktETEVYTnVCU01DT0RPdVpYRU5fSV5D RUR1QkVZXk9OEQpDThdaWmQebEhuZmRyeFNCQ3VjHksSHUJjU35Aa0JwcE9AHxEKWFwXHwQaBBs SHgcfGE8ZE08YHQUbGgQbGxoEHhIEGxMTEBseGh8aEQpeWRd/Um5lExEKTVwXGRkfEQpMWhd4bV
+ 1raxEKRVkXaGtrEQpMXxd6BQUFBQUFBQUFHREKTU4XaGsRCkxGF2NrbhEKQk8Xb3NMARgbSBlTf 2sRCkNaFxsfGAQbHBoEGB8bBBsSGxEKQl4XGxEKQlwXGhEKQkUXbXJPRhJjYB9Bc0ERCkJOF29r GhtTSERJZRhoEQpCTBdmSGl8R3JgSwVnUBEKQmwXb2dFU19lWnsbXRkRCkJAF2RLaFxYTmxrARN
+ AEQpCWBdiH21/Wx5FeUFHZREKTV4XBxsRClpYFxgRCnBnF21wR2l5ZUV6bU1iEAcZGhEKcGgXen NZGmAcGFtZSUAQBxkaEQpwaBdsZEhhTWldbHpsGxAHGRoRCnBoF2QTQG9SSWhTW2JpEB0aEQpwa BdrbEcZTnMcbhgFSRAHGRoRCnBoF2VEGBhObkNwWmhTEAcZGhEKcH0XYk5zYRkTehseZ28QBxka
+ EQpwfxdkWmdNa259S3scGhATHREKcF8XaGceaxJeb39sHVoQBxkaEQpwbBdgBU9DR3xnbU1nQBA cEhEKbX4XBxsRClhNF0sRIA==
+X-CLX-Shades: MLX
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.95,1.0.8
+ definitions=2019-09-27_09:2019-09-25,2019-09-27 signatures=0
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 phishscore=0 bulkscore=0 mlxscore=0
+ mlxlogscore=630 adultscore=0 lowpriorityscore=0 spamscore=0 malwarescore=0
+ clxscore=411 suspectscore=0 priorityscore=0 impostorscore=0
+ classifier=spam adjust=0 reason=mlx scancount=1 engine=8.12.0-1908290000
+ definitions=main-1909270193
+Return-Path: noreply@jotform.com
+X-MS-Exchange-Organization-ExpirationStartTime: 27 Sep 2019 22:37:22.8140
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 97fd7329-717c-48f7-350d-08d7439b4387
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 396573cb-f378-4b68-9bc8-15755c0c51f3:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report:
+ CIP:148.163.153.235;IPV:NLI;CTRY:US;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:DM5PR0201MB3413;H:mx0b-00000d04.pphosted.com;FPR:;SPF:None;LANG:en;
+X-MS-Exchange-Organization-AuthSource:
+ BL2NAM02FT046.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 97fd7329-717c-48f7-350d-08d7439b4387
+X-Microsoft-Antispam:
+ BCL:0;PCL:0;RULEID:(2390118)(7020095)(4652040)(5600167)(711020)(4605104)(71702078);SRVR:DM5PR0201MB3413;
+X-MS-TrafficTypeDiagnostic: DM5PR0201MB3413:
+X-MS-Exchange-PUrlCount: 1
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Oob-TLC-OOBClassifiers: OLM:10000;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 Sep 2019 22:37:22.7240
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 97fd7329-717c-48f7-350d-08d7439b4387
+X-MS-Exchange-CrossTenant-Id: 396573cb-f378-4b68-9bc8-15755c0c51f3
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM5PR0201MB3413
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3719141
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2305.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(750127)(520011016)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?cG1BL21hSXpFNGVVeGh6Q1NUbU42UjJON1d0TUNueDU0T3NEaVRFajIrTDB0?=
+ =?utf-8?B?RG9hTE4xeEYxSmlFZEF3ejRjVXgvTkFLYXc5TGxNTTVFZDdGK0ZzOTAwRFFI?=
+ =?utf-8?B?dHowcEdscDRNOHJuOFlnZG5nL0xITWtPdHFDK2lLQStwSStLQ1NyWDdESG9n?=
+ =?utf-8?B?c21qeFdMUHYySmhPazZZeDVRMXlwMW0rY2RKMVRkY296K05wdHFqcGFTbHNk?=
+ =?utf-8?B?VDV6Vm9YbUFzeFExK1VyVXNzTVF5YTMyVWlDZmtFRHArSXlQaE85ZXJEQ3FE?=
+ =?utf-8?B?Q3JCcXNrcnZNcTZoLy90RTA0V1d1VnNyaUNFMHA0ZVl3VlBtc010QWl2SEU1?=
+ =?utf-8?B?SXNIcnVNZXFyZXFMV1BybURQRmZ1SWR3ZjhveXZ2Q0hMck1IaFhCWkRzN1Nq?=
+ =?utf-8?B?QXVjWVFhYStwSnFobE54WFVOei9FYlYrQjc1YlBPNjFrZ0x2VnNPUkVkcTM3?=
+ =?utf-8?B?QUJIZCsrVWRtanR4K1JwZVp3anVxaERGRnZLTzIyK1NtTHphWVRyM0cyU2Nq?=
+ =?utf-8?B?RUpiaEVoakpUWFJ6YU5MOGJzcFFVblVCeTFTYVR0MFhoSGViaXNhS2t0MnhI?=
+ =?utf-8?B?Z0ZrTXQ4RVh2OHExZWdnTFNjTEJMVDVtbnAwYjhOWHk5MUVyNU0yc1RXd3cv?=
+ =?utf-8?B?bkJLUGdRbzZzM0ozS3Z0SDQxRHdwU0ZvdUU4clFvNm4zWEtWKy9SS1haeko5?=
+ =?utf-8?B?cDBQczdrMVBhL3lHeVBKanlYL0RmVVpJSEZHNGM4YUovVWdVSENaTndkci9t?=
+ =?utf-8?B?U1pENmNjcUVabk9zaFFIUU1tS0plZVBTeGN0WHpIODBWYzNXNzNEYWQyNm1P?=
+ =?utf-8?B?bm5UQyswSmJ4VkpUUU5EOFRBRlNxVXEyQmpsTHpTN1ROZ2ZVaFlxSEJESTJv?=
+ =?utf-8?B?dWFwa25MRlY1SnRRVWhEcFNjMFRmUGJnRmJUNVlDZmJZVTlUYkRSMUtnendS?=
+ =?utf-8?B?Q2I5Wjg4akdMZmVncnVyQzRSYk9JY2lNbkozeXJpaTE4Ung1UmdYRVZmRms4?=
+ =?utf-8?B?NlY1RmNsRXBWZTYwcEJRMGdSdDhhRHZwRHlpRVc4NXZabldTKzdBV05QWFpn?=
+ =?utf-8?B?UXg1TTFVUXlYNGJDWXpkTkVyc3d2OUhTT2JWR05wNkI4b0lya21MZk1Ed1hp?=
+ =?utf-8?B?MWtZR08wVXlKa2ZQcDFJcGh5Zis4aFFiZU9Wejd3TUdaRFZrbVZnaDIySmpz?=
+ =?utf-8?B?c092R0JORWdzcUo5a2ZyczV5dE15Q2xWL0RYVVpicThMeUh6cUVLREFzdVl6?=
+ =?utf-8?B?cWQxeHlFV05qQzFGT2FQeDRzWnR3WnpkTUluWmp3SEtyWDdTM25ENDc2UVRp?=
+ =?utf-8?B?K0huS1RSMUFvRjhLWno4UUU3VTFuL3FVaWlwbFJLLzRha084R25XQUtkMUdr?=
+ =?utf-8?B?TGU3YjRsSHRhWUxKTEdURWlZdldyN1dZUktLakwzSWIrcGV3Rzdmb3Y2KzY0?=
+ =?utf-8?B?aHVVbVJ5YmVRSUJqRmNQYzIxaHBiQ3NwWURLeHhQcmlab0dLS1grQXJRK0xi?=
+ =?utf-8?B?Y0lUc0lzZTFOWk9nSzhQWVY4NkUvemM2T1YrLzlEVlVXTkQxTlRGYm1TMDdG?=
+ =?utf-8?B?MHFwS280VUVsVEgvVFg1MjBCS2dFMkEwTFNsVDhseExkRkh4T1VDVVFOQWQz?=
+ =?utf-8?B?WVVMalVySC96OXJCWVRoNTBueHowYUxla09wWlI3RGErNERweUUvUUtyMm43?=
+ =?utf-8?B?UU5Cd2RvOEwzRmFvUUphc1pQMDQ3aFdJQ3MzK1ZJbjhOTXQ2d1R1RmdBPT0=?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><style>
+                    .forward-text-show {
+                        display: block !important;
+                        color: #222222 !important;
+                        text-align: center!important; 
+                        font-size: 11px!important;
+                    }
+                    .forward-link-show {
+                        display : inline !important;
+                        color: #2160d2 !important;
+                        text-decoration: underline !important;
+                        cursor: none !important;
+                    }
+                </style></head><body style="margin: 0 !important; padding: 0
+!important;">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#f7f9fc"><tbody><tr><td height="30">
+<p>This email is being sent to acknowledge the receipt of the following public
+records request by the Idaho State Department of Education:</p>
+<p>&nbsp;</p>
+</td>
+</tr><tr><td align="center">
+<table style="min-width: 500px; width: 500px;" border="0" width="500" cellspacing="0" cellpadding="0" bgcolor="#eeeeee"><tbody><tr><td bgcolor="#EEEEEE" width="4">&nbsp;</td>
+<td align="center" bgcolor="#FFFFFF">
+<table id="emailFieldsTable" class="mceNonEditable" border="0" width="100%" cellspacing="0" cellpadding="5"><tbody id="emailFieldsTableBody"><tr id="row_3" class="questionRow"><td id="question_3" class="questionColumn" style="padding:
+5px !important;" valign="top" bgcolor="white" width="170">Name</td><td id="value_3" class="valueColumn" style="padding: 5px !important;" bgcolor="white">Lief Esbenshade</td></tr><tr id="row_4" class="questionRow"><td id="question_4" class="questionColumn" style="padding: 5px !important;" valign="top" bgcolor="#f3f3f3" width="170">Phone Number</td><td id="value_4" class="valueColumn" style="padding: 5px !important;" bgcolor="#f3f3f3">(503) 576
+1616</td></tr><tr id="row_5" class="questionRow"><td id="question_5" class="questionColumn" style="padding: 5px !important;" valign="top" bgcolor="white" width="170">Email</td><td id="value_5" class="valueColumn" style="padding: 5px !important;" bgcolor="white">liefEsbenshade@stanford.edu</td></tr><tr id="row_6" class="questionRow"><td id="question_6" class="questionColumn" style="padding:
+5px !important;" valign="top" bgcolor="#f3f3f3" width="170">Address</td><td id="value_6" class="valueColumn" style="padding: 5px !important;" bgcolor="#f3f3f3">Street Address: 68 Olmsted Rd<br>Street Address Line 2: Apt
+111<br>City: Stanford<br>State / Province: Ca<br>Postal / Zip Code:
+94305<br></td></tr><tr id="row_7" class="questionRow"><td id="question_7" class="questionColumn" style="padding: 5px !important;" valign="top" bgcolor="white" width="170">Description of Records Requested</td><td id="value_7" class="valueColumn" style="padding: 5px !important;" bgcolor="white">I am a doctoral candidate at Stanford University and am
+researching teacher evaluation systems. I am particularly interested in
+understanding the variability in teacher evaluation reports across districts and
+time. <br><br>
+I would like to request a district level count of teachers receiving each
+evaluation score for all Idaho school districts from the 2014-15 school year
+through the latest available records. As a reference, I have attached an example
+file with the desired layout - to be clear, the example file only shows one
+district but I would like to request records for all Idaho school districts. I
+would also like to emphasize that I am not seeking the ratings of individual
+teachers and am not interested in any PII, I am only requesting the
+district-year counts of teachers receiving each rating.<br><br>
+Thank you for your time and assistance,<br>
+-Lief Esbenshade</td></tr><tr id="row_10" class="questionRow"><td id="question_10" class="questionColumn" bgcolor="#f3f3f3" style="padding:5px
+!important;" valign="top" width="170"></td><td id="value_10" class="valueColumn" bgcolor="#f3f3f3" style="padding:5px !important;"><a href="https://www.jotform.com/uploads/IdahoSDE/92256797986178/4454330392127522815/example_file.xlsx" target="_blank" title="example_file.xlsx">example_file.xlsx</a></td></tr></tbody></table></td>
+<td bgcolor="#EEEEEE" width="4">&nbsp;</td>
+</tr><tr><td style="font-size: 4px;" bgcolor="#EEEEEE" height="4">&nbsp;</td>
+<td style="font-size: 4px;" bgcolor="#EEEEEE">&nbsp;</td>
+<td style="font-size: 4px;" bgcolor="#EEEEEE">&nbsp;</td>
+</tr></tbody></table></td>
+</tr><tr><td height="30">&nbsp;</td>
+</tr></tbody></table></body></html>
+
