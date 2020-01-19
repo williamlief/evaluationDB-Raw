@@ -21,7 +21,7 @@ df <- read_excel(paste(path,
          et = `Grand Total`)
 
 RhodeIsland <- df %>% 
-  mutate(year = as.numeric(substr(name, 1, 4)),
+  mutate(year = as.numeric(substr(name, 1, 4)) + 1,
          localid = str_split(name, "\\|")[2])
 
          
