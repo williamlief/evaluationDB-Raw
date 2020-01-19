@@ -1,17 +1,14 @@
-source("setup.r")
-
-path <- setpath("Rhode Island")
+path <- "data-raw/Rhode Island/evaluation"
 
 library(dplyr)
 library(readxl)
 library(tidyr)
 library(readr)
-library(stringr)
 
 df <- read_excel(paste(path, 
-                        "numbers of educators by YR-LEA-FERating-ToSend.xlsx", 
-                        sep = "/"), 
-                  sheet=1) %>% 
+                       "numbers of educators by YR-LEA-FERating-ToSend.xlsx", 
+                       sep = "/"), 
+                 sheet=1) %>% 
   rename(name = `Row Labels`,
          e4 = `HE`,
          e3 = `E`,
@@ -20,8 +17,19 @@ df <- read_excel(paste(path,
          es = `Not available`,
          et = `Grand Total`)
 
-RhodeIsland <- df %>% 
-  mutate(year = as.numeric(substr(name, 1, 4)) + 1,
-         localid = str_split(name, "\\|")[2])
+toNumber = function(e)
+{
+  as.numeric(gsub(",", "", e))
+}
 
-         
+RhodeIsland <- df %>% 
+  separate(name, c("year", "localid", "name"), sep = "\\|") %>% 
+  mutate(year = as.numeric(substr(year, 1, 4)),
+         name = tolower(name)) %>% 
+  mutate_at(
+    vars(e4, e3, e2, e1, es, et), 
+    list(~toNumber(.))
+  ) %>% 
+  select(year, localid, name, e4, e3, e2, e1, es, et)
+
+write_csv(RhodeIsland, "data-clean/RhodeIslandEval.csv")
