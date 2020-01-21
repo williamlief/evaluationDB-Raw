@@ -1,3 +1,10 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# ORIGINAL TEXT ^^^^^^^^^^^^^^
 # TODO - Fill out this documentation
 * Brief overview of evaluation system and links to documentation
     + number of rating categories
@@ -132,3 +139,4 @@
     + Source
     + Quality Notes
     + Imputation: Ohio reports any categories with <3 teachers as <3, I impute zeros and flag the replacement. 
+
