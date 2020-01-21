@@ -7,7 +7,7 @@ library(tidyr)
 library(readr)
 
 # Read in Files ----------------------------------------------------------------
-list <- list.files("data-clean", pattern = "Eval.csv", full.names = TRUE)
+list <- list.files("data-raw/clean_csv_files", pattern = "Eval.csv", full.names = TRUE)
 
 files <- lapply(
   list,
@@ -53,7 +53,7 @@ df2 %>% mutate(pt = p1+p2+p3+p4) %>% group_by(state) %>% summarize(mean(is.na(pt
 
 # Merge NCES -------------------------------------------------------------------
 
-nces <- read_csv("data-clean/NCES_CCD.csv") 
+nces <- read_csv("data-raw/clean_csv_files/NCES_CCD.csv") 
 
 df_nces <- df2 %>% 
   mutate(
@@ -97,4 +97,4 @@ evaluationData <- df_nces %>%
     "impute_level4" = e4_impute
   )
 
-saveRDS(evaluationData, "data-clean/evaluationData.rds")
+usethis::use_data(evaluationData)
