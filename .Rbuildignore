@@ -1,0 +1,5 @@
+^data-raw$
+^evaluationDB\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+^README\.Rmd$
