@@ -1,0 +1,29 @@
+---
+title: "overview"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{overview}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+
+```
+
+# TO DO
+
+This vignette will describe the data, why its important
+
+- Which states are included
+- state*years and n-districts per state-year
+- some simple descriptives?
+- notes about things to be aware of?
+- link to github for issues
