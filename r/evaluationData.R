@@ -30,3 +30,4 @@
 #'   \item{impute_level4}{Was count imputed - see XX for more details}
 #' } 
 #' @source see \url{https://github.com/williamlief/evaluationDB}
+"evaluationData"
