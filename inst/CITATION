@@ -5,11 +5,11 @@ citEntry(entry = "Misc",
   author       = personList(as.person("Lief Esbenshade")),
   year         = "2020",
   url          = "https://github.com/williamlief/evaluationDB",
-  note         = "Version 0.1"
+  note         = "Version 0.1",
 
   textVersion  =
   paste("Lief Esbenshade (2020).",
         "Teacher Evaluation Data with evaluationDB.",
         "Version 0.1",
-        "URL http://www.jstatsoft.org/v40/i03/.")
+        "URL https://github.com/williamlief/evaluationDB.")
 )
