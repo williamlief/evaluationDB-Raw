@@ -39,4 +39,4 @@ Michigan <- df %>%
   filter(name != 'statewide') %>% 
   select("state", "year", "name", "localid", "et", "e4", "e3", "e2", "e1")
 
-write_csv(Michigan, "data-clean/MichiganEval.csv")
+write_csv(Michigan, "data-raw/clean_csv_files/MichiganEval.csv")

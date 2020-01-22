@@ -32,4 +32,4 @@ Idaho <- df %>%
         ) %>% 
   select(state, year, name, localid, e4, e3, e2, e1)
 
-write_csv(Idaho, "data-clean/IdahoEval.csv")
+write_csv(Idaho, "data-raw/clean_csv_files/IdahoEval.csv")
