@@ -151,4 +151,4 @@ df2 <- df %>%
   ) %>% 
   rename(localid = district)
 
-write_csv(df2, "data-clean/IndianaEval.csv")
+write_csv(df2, "data-raw/clean_csv_files/IndianaEval.csv")

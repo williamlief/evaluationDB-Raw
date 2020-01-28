@@ -145,4 +145,4 @@ df <- bind_rows(parse) %>%
          state = "FL") %>%
   select(-e2.1, -e2.2)
 
-write_csv(df, "data-clean/FloridaEval.csv")
+write_csv(df, "data-raw/clean_csv_files/FloridaEval.csv")

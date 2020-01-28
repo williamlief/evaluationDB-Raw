@@ -57,4 +57,4 @@ Massachusetts <- df %>%
   filter(name != "state totals") %>% 
   arrange(localid, year) 
 
-write_csv(Massachusetts, "data-clean/MassachusettsEval.csv")
+write_csv(Massachusetts, "data-raw/clean_csv_files/MassachusettsEval.csv")

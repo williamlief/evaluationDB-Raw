@@ -4,9 +4,7 @@
 library(dplyr)
 library(readxl)
 
-source("setup.r")
-
-path <- setpath("Ohio")
+path <- "data-raw/Ohio/evaluation"
 path2 <- stringr::str_replace(path, "Ohio/evaluation", "Ohio/District_teacher_data")
 
 # Read 2013-14 data ------------------------------------------------------------
@@ -124,4 +122,4 @@ check2 <- test %>% filter(years == "2017,2018,2019") %>% distinct(localid, name)
 # to 2017+ due to shift in districts represented. BUT already need to be cautious
 # because of time gap. Approximately 82% of teacher count is present in all years.
 
-readr::write_csv(Ohio, "CleanData/OhioEval.csv")
+readr::write_csv(Ohio, "data-raw/clean_csv_files/OhioEval.csv")
